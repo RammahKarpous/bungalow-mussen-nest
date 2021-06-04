@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      zIndex: {
+        '-1': '-1'
+      },
       colors: {
         body: '#FFFDFB',
         brown: {
@@ -28,9 +31,22 @@ module.exports = {
 
         gray: {
           800: '#F5F5F5',
+          500: '#B9B9B9'
         },
+      },
+      fontFamily: {
+        headings: ["'Source Sans Pro'"],
+        headlines: ['Cinzel'],
+        body: ['Montserrat']
       }
     },
+    fontSize: {
+      page: '4rem',
+      section: '3rem',
+      sub: '2rem',
+      subSection: '1.5rem',
+      largeBodyText: '1.25rem'
+    }
   },
   variants: {
     extend: {},
