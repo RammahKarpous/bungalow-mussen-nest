@@ -15,10 +15,10 @@ const Navigation = ({ openState }) => {
     return (
         <div>
             <div className="h-20 w-20 bg-green-100 flex items-center justify-center text-white" onClick={() => setIsOpen(true)}>
-                <h4 className="font-semibold uppercase tracking-widest">menu</h4>
+                <h4 className="font-semibold text-white text-largeBodyText uppercase tracking-widest">menu</h4>
             </div>
 
-            <nav className={`fixed w-72 h-full ${isOpen ? 'left-0' : '-left-72'} transition duration-1000 top-0 bg-green-100 z-10`}>
+            <nav className={`fixed w-72 h-full ${isOpen ? 'left-0' : '-left-72'} md:left-0 transition duration-1000 top-0 bg-green-100 z-10`}>
                 <div className="absolute top-4 left-6 h-10 w-10 sm:invisible" onClick={() => setIsOpen(false)}>
                     <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white w-1 h-9"></div>
                     <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-white w-1 h-9"></div>
