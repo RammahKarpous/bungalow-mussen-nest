@@ -10,7 +10,7 @@ function App() {
       <OpenNav />
 
       <Switch>
-        <Route path="/" component={Home} />
+        <Route exact path="/" component={Home} />
       </Switch>
     </BrowserRouter>
   );
