@@ -1,17 +1,18 @@
-// import mobileBgImage from '../assets/images/home/home-mobile-bg-image.png'
+import desktopBgImage from '../assets/images/home/home-bg-image.png'
+
+import Button from "../components/Button"
 
 const Home = () => {
     return (
         <div>
-            {/* <picture>
-                <source srcSet="media(" />
-            </picture> */}
+            <div className="absolute top-0 left-0 w-full h-full -z-1 bg-cover-full" style={{ background: `url(${desktopBgImage})` }}></div>
 
-            {/* <div className="z-0 w-full h-full" style={`background: url(${mobileBgImage})`}></div> */}
-
-            <div className="flex flex-col justify-center w-9/12 absolute left-1/2 bottom-10 transform -translate-x-1/2 text-center">
-                <h1>Welkom</h1>
-                <p>Bij de mussen-nest voor de ideale vakantie voor twee</p>
+            <div className="absolute bottom-0 left-0 w-full h-72 bg-gradient-to-b to-brown-50">
+                <div className="flex flex-col justify-center items-center gap-2 w-72 absolute left-1/2 bottom-10 transform -translate-x-1/2 text-center">
+                    <h1 className="text-white">Welkom</h1>
+                    <p className="text-white">Bij de mussen-nest voor de ideale vakantie voor twee</p>
+                    <Button to="/gallerij" type="secondary" text="Bezoek de gallerij" />
+                </div>
             </div>
         </div>
     )
