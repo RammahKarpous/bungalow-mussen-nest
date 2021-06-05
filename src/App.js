@@ -6,11 +6,13 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navigation />
+      <div className="grid grid-cols-5 min-h-full h-full">
+        <Navigation />
 
-      <Switch>
-        <Route exact path="/" component={Home} />
-      </Switch>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </div>
     </BrowserRouter>
   );
 }

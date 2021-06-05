@@ -14,12 +14,12 @@ const Navigation = ({ openState }) => {
 
     return (
         <div>
-            <div className="h-20 w-20 bg-green-100 flex items-center justify-center text-white" onClick={() => setIsOpen(true)}>
-                <h4 className="font-semibold text-white text-largeBodyText uppercase tracking-widest">menu</h4>
+            <div className="h-20 w-20 bg-green-100 absolute text-center text-white z-10" onClick={() => setIsOpen(true)}>
+                <h4 className="font-semibold text-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-largeBodyText uppercase tracking-widest">menu</h4>
             </div>
 
-            <nav className={`fixed w-72 h-full ${isOpen ? 'left-0' : '-left-72'} md:left-0 transition duration-1000 top-0 bg-green-100 z-10`}>
-                <div className="absolute top-4 left-6 h-10 w-10 sm:invisible" onClick={() => setIsOpen(false)}>
+            <nav className={`fixed w-72 h-full ${isOpen ? 'left-0' : '-left-72'} lg:left-0 transition duration-1000 top-0 bg-green-100 z-20`}>
+                <div className="absolute top-4 left-6 h-10 w-10 lg:invisible" onClick={() => setIsOpen(false)}>
                     <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white w-1 h-9"></div>
                     <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-white w-1 h-9"></div>
                 </div>
@@ -28,7 +28,7 @@ const Navigation = ({ openState }) => {
 
                 <ul>
                     {links.map((link, i) => (
-                        <Link className="flex items-center justify-start px-6 py-5 gap-2 text-white" key={i} exact to={ link.to }>
+                        <Link className="flex items-center justify-start px-6 py-5 gap-2 text-white" onClick={() => setIsOpen(false)} key={i} exact to={ link.to }>
                             <img src={link.icon} alt={`${link.name} icon`} />
                             { link.name }
                         </Link>
