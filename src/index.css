@@ -51,12 +51,6 @@
     .beige-button-icon {
         @apply bg-current bg-brown-50;
     }
-
-    /* background image */
-    /* .bg-cover-full {
-        @apply bg-cover bg-no-repeat bg-center !important;
-        background-repeat: 
-    } */
 }
 
 .bg-cover-full {
