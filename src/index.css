@@ -51,10 +51,28 @@
     .beige-button-icon {
         @apply bg-current bg-brown-50;
     }
-}
 
-.bg-cover-full {
-    background-position: center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important; 
+    .sm-bg-cover {
+        background-position: -240px -530px !important;
+        background-size: 1130px !important;
+        background-repeat: no-repeat !important; 
+    }
+
+    .md-bg-cover {
+        background-position: -50px -970px !important;
+        background-size: 1800px!important;
+        background-repeat: no-repeat !important; 
+    }
+    
+    .lg-bg-cover {
+        background-position: -30px -1030px !important;
+        background-size: 2170px!important;
+        background-repeat: no-repeat !important;
+    }
+
+    .xl-bg-cover {
+        background-position: 30px -1630px !important;
+        background-size: 2870px!important;
+        background-repeat: no-repeat !important;
+    }
 }
