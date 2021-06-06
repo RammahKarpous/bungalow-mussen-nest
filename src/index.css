@@ -52,6 +52,7 @@
         @apply bg-current bg-brown-50;
     }
 
+    /* Background image size and placement */
     .sm-bg-cover {
         background-position: -240px -530px !important;
         background-size: 1130px !important;
