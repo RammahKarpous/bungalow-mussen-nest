@@ -8,18 +8,18 @@ import twitter from '../assets/icons/social-media/twitter.svg'
 import facebook from '../assets/icons/social-media/facebook.svg'
 import { useState } from "react"
 
-const Navigation = ({ openState }) => {
+const SideNavigation = ({ openState }) => {
 
     const [isOpen, setIsOpen] = useState(openState)
 
     return (
         <div>
-            <div className="h-20 w-20 bg-green-100 absolute text-center text-white z-10" onClick={() => setIsOpen(true)}>
+            <div className="h-20 w-20 bg-green-100 absolute text-center text-white z-10 cursor-pointer" onClick={() => setIsOpen(true)}>
                 <h4 className="font-semibold text-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-largeBodyText uppercase tracking-widest">menu</h4>
             </div>
 
             <nav className={`fixed w-72 h-full ${isOpen ? 'left-0' : '-left-72'} lg:left-0 transition duration-1000 top-0 bg-green-100 z-20`}>
-                <div className="absolute top-4 left-6 h-10 w-10 lg:invisible" onClick={() => setIsOpen(false)}>
+                <div className="absolute top-4 left-6 h-10 w-10 lg:invisible cursor-pointer" onClick={() => setIsOpen(false)}>
                     <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white w-1 h-9"></div>
                     <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-white w-1 h-9"></div>
                 </div>
@@ -46,4 +46,4 @@ const Navigation = ({ openState }) => {
     )
 }
 
-export default Navigation
+export default SideNavigation
