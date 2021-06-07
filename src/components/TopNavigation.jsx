@@ -27,9 +27,11 @@ const TopNavigation = ({ type, active }) => {
                 </nav>
             ) : (
                 <nav>
-                    <ul>
+                    <ul className="flex flex-row mt-5">
                         { type.map((link, i) => (
-                            <li key={i}><Link to={link.to}>{link.name}</Link></li>
+                            <li key={i} className="border-r-2 border-brown-400 px-7 last:border-r-0">
+                                <Link className={`inline-block ${active === link.name && 'font-bold'}`} to={link.to}>{link.name}</Link>
+                            </li>
                         )) }
                     </ul>
                 </nav>

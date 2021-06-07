@@ -49,7 +49,10 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      borderWidth: ['last'],
+      padding: ['first'],
+    },
   },
   plugins: [],
 }
