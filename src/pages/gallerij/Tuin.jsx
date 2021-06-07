@@ -1,9 +1,30 @@
 import Slideshow from "../../components/Slideshow"
 
+import terras from '../../assets/images/tuin/terras.jpg'
+import tuin from '../../assets/images/tuin/tuin.jpg'
+import ligbed from '../../assets/images/tuin/ligbed.jpg'
+import terrasEethoek from '../../assets/images/tuin/terras-eethoek.jpg'
+
 const Tuin = () => {
+
+    const images = [
+        { path: terras, name: 'Terras' },
+        { path: tuin, name: 'Tuin' },
+        { path: ligbed, name: 'Ligbed' },
+        { path: terrasEethoek, name: 'Terras eethoek' },
+    ]
+
     return (
-        <div>
-            <Slideshow />
+        <div className="mt-10 flex flex-col lg:flex-row w-10/12 lg:w-full m-auto gap-10">
+            <div className="lg:w-7/12">
+                <Slideshow images={images} />
+            </div>
+            <div className="lg:w-3/12">
+                <img src={terras} alt={`Terras`} className="lg:w-9/12 lg:block hidden mb-10" />
+
+                <p>De zonnige tuin op het zuiden geeft u alle privacy. Er staat een eettafel met 2 stoelen.
+                Tevens 2 heerlijke ligbedden met een tafeltje en uiteraard ontbreekt de parasol niet. Dit alles is voorzien van kussens voor een comfortabele zit of lig. Badlakens voor de ligbedden zijn ook aanwezig. Geniet van de rust en fluitende vogels op uw eigen terras. En misschien brengt de eekhoorn u wel een bezoekje!</p>
+            </div>
         </div>
     )
 }
