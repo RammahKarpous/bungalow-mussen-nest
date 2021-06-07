@@ -1,5 +1,5 @@
 import logo from '../assets/logos/mussen-nest-logo-dark.svg'
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { links } from './links'
 
 // Social media icons
@@ -28,10 +28,13 @@ const SideNavigation = ({ openState }) => {
 
                 <ul>
                     {links.map((link, i) => (
-                        <Link className="flex items-center justify-start px-6 py-5 gap-2 text-white" onClick={() => setIsOpen(false)} key={i} exact to={ link.to }>
+                        <NavLink 
+                            className="flex items-center justify-start px-6 py-5 gap-2 text-white"
+                            activeClassName="bg-green-200" 
+                            onClick={() => setIsOpen(false)} key={i} exact to={ link.to }>
                             <img src={link.icon} alt={`${link.name} icon`} />
                             { link.name }
-                        </Link>
+                        </NavLink>
                     ))}
                 </ul>
 

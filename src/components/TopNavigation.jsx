@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const TopNavigation = ({ type, active }) => {
     const [width, setWidth] = useState(window.innerWidth);
@@ -21,7 +21,7 @@ const TopNavigation = ({ type, active }) => {
                     <p className="text-white p-4">{ active }</p>
                     <ul>
                         { type.map((link, i) => (
-                            <li key={i}><Link className={`text-white p-4 block ${active === link.name && 'bg-brown-100'}`} to={link.to}>{link.name}</Link></li>
+                            <li key={i}><NavLink className={`text-white p-4 block`} activeClassName="bg-brown-100" to={link.to}>{link.name}</NavLink></li>
                         )) }
                     </ul>
                 </nav>
@@ -30,7 +30,7 @@ const TopNavigation = ({ type, active }) => {
                     <ul className="flex flex-row mt-5">
                         { type.map((link, i) => (
                             <li key={i} className="border-r-2 border-brown-400 px-7 last:border-r-0">
-                                <Link className={`inline-block ${active === link.name && 'font-bold'}`} to={link.to}>{link.name}</Link>
+                                <NavLink className={`inline-block`} activeClassName="font-bold" to={link.to}>{link.name}</NavLink>
                             </li>
                         )) }
                     </ul>
