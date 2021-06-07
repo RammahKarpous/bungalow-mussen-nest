@@ -13,7 +13,11 @@ function App() {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/gallerij/tuin" component={() => <Gallerij page={Tuin} active="Tuin" />} />
+          <Route exact path="/gallerij/tuin" component={() => 
+            <Gallerij active="Tuin">
+              <Tuin />
+            </Gallerij>} />
+            
         </Switch>
       </div>
     </BrowserRouter>
