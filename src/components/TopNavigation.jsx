@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const TopNavigation = ({ type, active }) => {
+import arrow from '../assets/icons/arrow-down.svg'
+
+const TopNavigation = ({ type, active, change }) => {
     const [width, setWidth] = useState(window.innerWidth);
+    const [isOpen, setIsOpen] = useState(false)
 
     const updateDimensions = () => {
         setWidth(window.innerWidth);
@@ -16,10 +19,19 @@ const TopNavigation = ({ type, active }) => {
 
     return (
         <>
-            {width < 500 ? (
-                <nav className="bg-brown-50 w-10/12 m-auto">
-                    <p className="text-white p-4">{ active }</p>
-                    <ul>
+            {width < change ? (
+                <nav className="bg-brown-50 w-10/12 m-auto relative">
+                    <p className="text-white p-4 flex justify-between items-center" onClick={() => setIsOpen( !isOpen )}>
+                        { active }
+                        <img 
+                            src={arrow} 
+                            alt={`${isOpen ? 'close' : 'open'} the dropdown`}
+                            className={isOpen && 'transform rotate-180'} />
+                    </p>
+                    <ul className={`
+                        absolute top-14 z-50 left-0 w-full bg-brown-50 transition overflow-hidden 
+                        ${!isOpen && 'h-0'}`}>
+
                         { type.map((link, i) => (
                             <li key={i}><NavLink className={`text-white p-4 block`} activeClassName="bg-brown-100" to={link.to}>{link.name}</NavLink></li>
                         )) }
@@ -39,6 +51,10 @@ const TopNavigation = ({ type, active }) => {
             
         </>
     )
+}
+
+TopNavigation.defaultProps = {
+    change: 768
 }
 
 export default TopNavigation

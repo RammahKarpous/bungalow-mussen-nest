@@ -15,12 +15,12 @@ const Tuin = () => {
     ]
 
     return (
-        <div className="mt-10 flex flex-col lg:flex-row w-10/12 lg:w-full m-auto gap-10">
-            <div className="lg:w-7/12">
+        <div className="mt-10 flex flex-col xl:flex-row w-10/12 xl:w-full m-auto lg:ml-0 gap-10">
+            <div className="xl:w-7/12">
                 <Slideshow images={images} />
             </div>
-            <div className="lg:w-3/12">
-                <img src={terras} alt={`Terras`} className="lg:w-9/12 lg:block hidden mb-10" />
+            <div className="xl:w-3/12">
+                <img src={terras} alt={`Terras`} className="xl:w-9/12 xl:block hidden mb-10" />
 
                 <p>De zonnige tuin op het zuiden geeft u alle privacy. Er staat een eettafel met 2 stoelen.
                 Tevens 2 heerlijke ligbedden met een tafeltje en uiteraard ontbreekt de parasol niet. Dit alles is voorzien van kussens voor een comfortabele zit of lig. Badlakens voor de ligbedden zijn ook aanwezig. Geniet van de rust en fluitende vogels op uw eigen terras. En misschien brengt de eekhoorn u wel een bezoekje!</p>
