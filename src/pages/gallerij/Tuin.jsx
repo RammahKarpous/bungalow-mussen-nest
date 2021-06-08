@@ -13,9 +13,9 @@ const Tuin = () => {
         { path: ligbed, name: 'Ligbed' },
         { path: terrasEethoek, name: 'Terras eethoek' },
     ]
-
+//  w-10/12 xl:w-full m-auto lg:ml-0 
     return (
-        <div className="mt-10 flex flex-col xl:flex-row w-10/12 xl:w-full m-auto lg:ml-0 gap-10">
+        <div className="mt-10 flex flex-col xl:flex-row gap-10">
             <div className="xl:w-7/12">
                 <Slideshow images={images} />
             </div>

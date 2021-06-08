@@ -16,7 +16,7 @@
     }
 
     p {
-        @apply font-body;
+        @apply font-body my-2 block;
     }
 
     h1 {

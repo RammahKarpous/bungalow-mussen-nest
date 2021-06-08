@@ -4,6 +4,7 @@ import SideNavigation from './components/SideNavigation';
 import Gallerij from './pages/Gallerij';
 import Tuin from './pages/gallerij/Tuin';
 import Home from './pages/Home';
+import Woonkamer from './pages/gallerij/Woonkamer';
 
 function App() {
 
@@ -16,6 +17,10 @@ function App() {
                     <Route exact path="/" component={Home} />
                     <Route exact path="/gallerij/tuin" component={() => <Gallerij active="Tuin">
                         <Tuin />
+                    </Gallerij>} />
+
+                    <Route exact path="/gallerij/woonkamer" component={() => <Gallerij active="Woonkamer">
+                        <Woonkamer />
                     </Gallerij>} />
                     
                 </Switch>
