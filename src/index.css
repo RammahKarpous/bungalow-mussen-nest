@@ -32,32 +32,35 @@
 	}
 
 	h2 {
-		@apply text-section font-bold leading-none;
+		@apply text-subSection md:text-sub lg:text-section font-bold leading-none;
 	}
 
 	h3 {
-		@apply text-sub font-bold leading-none;
+		@apply lg:text-sub font-bold leading-none;
 	}
 
 	h4 {
-		@apply text-subSection font-semibold leading-none;
+		@apply text-base font-semibold leading-none;
 	}
 
 	/* Button styling */
+	.button {
+		@apply flex gap-3 justify-center items-center py-3 px-5 font-body text-base tracking-widest;
+	}
 	.primary {
-		@apply bg-current bg-green-100 hover:bg-green-200;
+		@apply bg-current bg-green-100 hover:bg-green-200 text-beige-300;
 	}
 
 	.secondary {
 		@apply bg-current bg-beige-100;
 	}
 
-	.green-button-icon {
-		@apply bg-current bg-beige-300;
+	.primary-button-icon {
+		@apply fill-current text-beige-300;
 	}
 
-	.beige-button-icon {
-		@apply bg-current bg-brown-50;
+	.secondary-button-icon {
+		@apply fill-current text-brown-50;
 	}
 
 	/* Background image size and placement */
