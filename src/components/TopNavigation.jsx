@@ -42,7 +42,7 @@ const TopNavigation = ({ type, active, change }) => {
                 <nav>
                     <ul className="flex flex-row mt-5">
                         { type.map((link, i) => (
-                            <li key={i} className={`border-r-2 border-brown-400 px-7 last:border-r-0 ${i == 0 && 'pl-0'}`}>
+                            <li key={i} className={`border-r-2 border-brown-400 px-7 last:border-r-0 ${i === 0 && 'pl-0'}`}>
                                 <NavLink className={`inline-block`} activeClassName="font-bold" to={link.to}>{link.name}</NavLink>
                             </li>
                         )) }
