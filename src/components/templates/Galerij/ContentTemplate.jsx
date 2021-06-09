@@ -1,6 +1,6 @@
-const ContentTemplate = ({children}) => {
+const ContentTemplate = ({children, extraClassNames, quaterWidth}) => {
     return (
-        <div className="gallerij-content-template">
+        <div className={`${quaterWidth && 'gallerij-content-template'} ${extraClassNames}`}>
             {children}
         </div>
     )

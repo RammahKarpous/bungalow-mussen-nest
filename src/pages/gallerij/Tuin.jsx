@@ -22,7 +22,7 @@ const Tuin = () => {
             <SlideshowTemplate>
                 <Slideshow images={images} />
             </SlideshowTemplate>
-            <ContentTemplate>
+            <ContentTemplate quaterWidth>
                 <img src={terras} alt={`Terras`} className="xl:w-9/12 xl:block hidden mb-10" />
 
                 <p>De zonnige tuin op het zuiden geeft u alle privacy. Er staat een eettafel met 2 stoelen.
