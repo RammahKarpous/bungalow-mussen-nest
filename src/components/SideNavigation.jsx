@@ -29,7 +29,7 @@ const SideNavigation = ({ openState }) => {
                 <ul>
                     {links.map((link, i) => (
                         <NavLink 
-                            className="flex items-center justify-start px-6 py-5 gap-2 text-white"
+                            className="flex items-center font-body justify-start px-6 py-5 gap-2 text-white"
                             activeClassName="bg-green-200" 
                             onClick={() => setIsOpen(false)} key={i} exact to={ link.to }>
                             <img src={link.icon} alt={`${link.name} icon`} />
