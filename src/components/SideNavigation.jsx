@@ -14,7 +14,7 @@ const SideNavigation = ({ openState }) => {
 
     return (
         <div>
-            <div className="h-20 w-20 bg-green-100 absolute text-center text-white z-10 cursor-pointer" onClick={() => setIsOpen(true)}>
+            <div className="h-20 w-20 bg-green-100 fixed text-center text-white z-10 cursor-pointer" onClick={() => setIsOpen(true)}>
                 <h4 className="font-semibold text-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-largeBodyText uppercase tracking-widest">menu</h4>
             </div>
 
