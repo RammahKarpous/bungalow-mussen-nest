@@ -1,6 +1,6 @@
-const PageTemplate = ({children}) => {
+const PageTemplate = ({children, extraClassNames}) => {
     return (
-        <div className="page-template">
+        <div className={`page-template ${extraClassNames}`}>
             {children}
         </div>
     )
