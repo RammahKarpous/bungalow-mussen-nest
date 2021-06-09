@@ -5,6 +5,7 @@ import Tuin from './pages/gallerij/Tuin';
 import Home from './pages/Home';
 import Woonkamer from './pages/gallerij/Woonkamer';
 import IncludeFooter from './components/templates/IncludeFooter';
+import OverDeBungalow from './pages/OverDeBungalow';
 
 function App() {
 	return (
@@ -35,6 +36,8 @@ function App() {
 								</Gallerij>
 							)}
 						/>
+
+						<Route exact path="/over-de-bungalow" component={OverDeBungalow} />
 					</IncludeFooter>
 				</Switch>
 			</div>

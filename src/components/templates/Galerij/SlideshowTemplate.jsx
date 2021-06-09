@@ -1,6 +1,6 @@
 const SlideshowTemplate = ({children}) => {
     return (
-        <div className="xl:w-7/12">
+        <div className="gallerij-slideshow-template">
             {children}
         </div>
     )

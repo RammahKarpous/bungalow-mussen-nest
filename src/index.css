@@ -7,73 +7,102 @@
 @tailwind utilities;
 
 @layer base {
-    h1, h2, h3, h4, p, nav a {
-        @apply text-brown-50;
-    }
+	h1,
+	h2,
+	h3,
+	h4,
+	p,
+	nav a {
+		@apply text-brown-50;
+	}
 
-    h1, h2, h3, h4 {
-        @apply font-headings;
-    }
+	h1,
+	h2,
+	h3,
+	h4 {
+		@apply font-headings;
+	}
 
-    p {
-        @apply font-body my-2 block;
-    }
+	p {
+		@apply font-body my-2 block;
+	}
 
-    h1 {
-        @apply text-sub md:text-section lg:text-page font-bold leading-none;
-    }
-    
-    h2 {
-        @apply text-section font-bold leading-none;
-    }
-    
-    h3 {
-        @apply text-sub font-bold leading-none;
-    }
-    
-    h4 {
-        @apply text-subSection font-semibold leading-none;
-    }
+	h1 {
+		@apply text-sub md:text-section lg:text-page font-bold leading-none;
+	}
 
-    /* Button styling */
-    .primary {
-        @apply bg-current bg-green-100 hover:bg-green-200;
-    }
+	h2 {
+		@apply text-section font-bold leading-none;
+	}
 
-    .secondary {
-        @apply bg-current bg-beige-100;
-    }
+	h3 {
+		@apply text-sub font-bold leading-none;
+	}
 
-    .green-button-icon {
-        @apply bg-current bg-beige-300;
-    }
+	h4 {
+		@apply text-subSection font-semibold leading-none;
+	}
 
-    .beige-button-icon {
-        @apply bg-current bg-brown-50;
-    }
+	/* Button styling */
+	.primary {
+		@apply bg-current bg-green-100 hover:bg-green-200;
+	}
 
-    /* Background image size and placement */
-    .sm-bg-cover {
-        background-position: -240px -530px !important;
-        background-size: 1130px !important;
-        background-repeat: no-repeat !important; 
-    }
+	.secondary {
+		@apply bg-current bg-beige-100;
+	}
 
-    .md-bg-cover {
-        background-position: -50px -970px !important;
-        background-size: 1800px!important;
-        background-repeat: no-repeat !important; 
-    }
-    
-    .lg-bg-cover {
-        background-position: -30px -1030px !important;
-        background-size: 2170px!important;
-        background-repeat: no-repeat !important;
-    }
+	.green-button-icon {
+		@apply bg-current bg-beige-300;
+	}
 
-    .xl-bg-cover {
-        background-position: 30px -1630px !important;
-        background-size: 2870px!important;
-        background-repeat: no-repeat !important;
-    }
+	.beige-button-icon {
+		@apply bg-current bg-brown-50;
+	}
+
+	/* Background image size and placement */
+	.sm-bg-cover {
+		background-position: -240px -530px !important;
+		background-size: 1130px !important;
+		background-repeat: no-repeat !important;
+	}
+
+	.md-bg-cover {
+		background-position: -50px -970px !important;
+		background-size: 1800px !important;
+		background-repeat: no-repeat !important;
+	}
+
+	.lg-bg-cover {
+		background-position: -30px -1030px !important;
+		background-size: 2170px !important;
+		background-repeat: no-repeat !important;
+	}
+
+	.xl-bg-cover {
+		background-position: 30px -1630px !important;
+		background-size: 2870px !important;
+		background-repeat: no-repeat !important;
+	}
+
+	/* Template styles */
+	.include-footer {
+		@apply col-start-1 lg:col-start-2 col-end-7 lg:col-end-9 xl:pl-0 lg:pl-20 relative mt-20 grid grid-cols-8;
+	}
+
+	.page-template {
+		@apply w-full m-auto mb-3 mt-6 col-start-2 col-end-8 xl:col-end-9;
+	}
+
+	.gallerij-content-template {
+		@apply xl:w-3/12;
+	}
+
+	.gallerij-main-template {
+		@apply mt-10 flex flex-col xl:flex-row gap-10;
+	}
+
+	.gallerij-slideshow-template {
+		@apply xl:w-7/12;
+	}
 }

@@ -1,6 +1,6 @@
 const MainTemplate = ({children}) => {
     return (
-        <div className="mt-10 flex flex-col xl:flex-row gap-10">
+        <div className="gallerij-main-template">
             {children}
         </div>
     )

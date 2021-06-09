@@ -1,6 +1,6 @@
 const ContentTemplate = ({children}) => {
     return (
-        <div className="xl:w-3/12">
+        <div className="gallerij-content-template">
             {children}
         </div>
     )
