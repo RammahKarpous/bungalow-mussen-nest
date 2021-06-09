@@ -1,5 +1,4 @@
-import PageTemplate from "../components/templates/PageTemplate"
-import plattegrond from '../assets/images/bungalow-plattegrond.png'
+import plattegrondFoto from '../assets/images/bungalow-plattegrond.png'
 
 import keuken from '../assets/images/Keuken/keuken.jpg'
 import combidicht from '../assets/images/Keuken/combidicht.jpg'
@@ -9,9 +8,17 @@ import vaatwasser from '../assets/images/Keuken/vaatwasser.jpg'
 import koelkast from '../assets/images/Keuken/koelkast.jpg'
 import servies from '../assets/images/Keuken/servies.jpg'
 import Slideshow from "../components/Slideshow"
+
+import PageTemplate from "../components/templates/PageTemplate"
 import SlideshowTemplate from './../components/templates/Galerij/SlideshowTemplate';
 import ContentTemplate from "../components/templates/Galerij/ContentTemplate"
+import Button from '../components/Button'
+import MainTemplate from '../components/templates/Galerij/MainTemplate'
 
+import plattegrondPDF from '../assets/downloads/mussen-nest-plattegrond.pdf'
+import liebherrPDF from '../assets/downloads/liebherr-ik1624-21.pdf'
+import vaatwasserPDF from '../assets/downloads/vaatwasser.pdf'
+import combiPDF from '../assets/downloads/combi.pdf'
 
 const OverDeBungalow = () => {
 
@@ -29,18 +36,26 @@ const OverDeBungalow = () => {
         <PageTemplate>
             <h1>Over De Bungalow</h1>
 
-            <h2 className="mt-10 mb-4">Plattegrond van de bungalow</h2>
-            <img src={plattegrond} alt="Plattegrond van de bungalow" />
+            <h3 className="mt-10 mb-4">Plattegrond van de bungalow</h3>
+            <img src={plattegrondFoto} alt="Plattegrond van de bungalow" />
+            <Button to={plattegrondPDF} download text="Plattegrond met afmetingen" type="primary" />
 
-<div>
-            <SlideshowTemplate>
-                <h2 className="mt-10 mb-4">Wat is er in onze bungalow aanwezig?</h2>
-                <Slideshow images={images} />
-            </SlideshowTemplate>
-            <ContentTemplate>
+            <h3 className="mt-10 mb-4">Wat is er in onze bungalow aanwezig?</h3>
+            <MainTemplate>
+                <SlideshowTemplate>
+                    <Slideshow images={images} />
+                </SlideshowTemplate>
 
-            </ContentTemplate>
-            </div>
+                <ContentTemplate extraClassNames="mt-28">
+                    <h4 className="mt-10 mb-4">Download hieronder de gebruiksaanwijzingen</h4>
+
+                    <div className="flex gap-3 flex-col items-start">
+                        <Button to={vaatwasserPDF} download text="Inventum IVW6008A vaatwasser" type="primary" />
+                        <Button to={combiPDF} download text="Inventum IMC6132F Combi magnetron" type="primary" />
+                        <Button to={liebherrPDF} download text="Liebherr ik1624-21 (Koelkast met vriesvak)" type="primary" />
+                    </div>
+                </ContentTemplate>
+            </MainTemplate>
         </PageTemplate>
     )
 }
