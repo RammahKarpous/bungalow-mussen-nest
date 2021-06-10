@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="bg-brown-100 mt-32 col-start-1 col-end-9">
             <div className="py-20 px-8 md:pr-24 md:pl-24 lg:pr-48 lg:pl-56 flex flex-col md:flex-row gap-20 justify-between">
-                <div className="flex flex-col gap-6 w-80">
+                <div className="flex flex-col gap-6 w-full sm:w-80">
                     <img src={logo} className="w-52" alt="Mussen-Nest logo" />
 
                     <p className="text-beige-300">De woonkamer heeft heerlijk uitzicht op de tuin en geeft u volledig privacy. Het interieur is met een warme houten pvc vloer, witte muren en natuurlijk gordijnen een oase van rust.</p>
