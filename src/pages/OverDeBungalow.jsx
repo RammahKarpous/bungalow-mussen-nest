@@ -46,13 +46,13 @@ const OverDeBungalow = () => {
                     <Slideshow images={images} />
                 </SlideshowTemplate>
 
-                <ContentTemplate extraClassNames="mt-28">
-                    <h4 className="mt-10 mb-4">Download hieronder de gebruiksaanwijzingen</h4>
+                <ContentTemplate extraClassNames="xl:mt-28">
+                    <h4 className="mt-10 mb-4">Gebruiksaanwijzingen</h4>
 
                     <div className="flex gap-3 flex-col items-start">
-                        <Button to={vaatwasserPDF} download text="Inventum IVW6008A vaatwasser" type="primary" />
-                        <Button to={combiPDF} download text="Inventum IMC6132F Combi magnetron" type="primary" />
-                        <Button to={liebherrPDF} download text="Liebherr ik1624-21 (Koelkast met vriesvak)" type="primary" />
+                        <Button to={vaatwasserPDF} download text="Inventum Vaatwasser" type="primary" />
+                        <Button to={combiPDF} download text="Inventum Combi magnetron" type="primary" />
+                        <Button to={liebherrPDF} download text="Liebherr ik1624-21 koelkast" type="primary" />
                     </div>
                 </ContentTemplate>
             </MainTemplate>
