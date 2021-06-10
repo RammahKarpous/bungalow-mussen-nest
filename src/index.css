@@ -32,21 +32,22 @@
 	}
 
 	h2 {
-		@apply text-subSection md:text-sub lg:text-section font-bold leading-none;
+		@apply md:text-sub lg:text-section font-bold leading-none;
 	}
 
 	h3 {
-		@apply lg:text-sub font-bold leading-none;
+		@apply text-sub font-bold leading-none;
 	}
 
 	h4 {
-		@apply text-base font-semibold leading-none;
+		@apply text-subSection font-semibold leading-none;
 	}
 
 	/* Button styling */
 	.button {
-		@apply flex flex-col md:flex-row text-center md:text-left gap-3 justify-center items-center py-3 px-5 font-body text-sm md:text-base tracking-widest transition;
+		@apply flex gap-3 justify-center items-center py-3 px-5 font-body text-sm whitespace-nowrap md:text-base tracking-widest transition;
 	}
+
 	.primary {
 		@apply bg-current bg-green-100 hover:bg-green-200 text-beige-300;
 	}
@@ -90,11 +91,11 @@
 
 	/* Template styles */
 	.include-footer {
-		@apply col-start-1 lg:col-start-2 col-end-7 lg:col-end-9 xl:pl-0 lg:pl-20 relative mt-20 grid grid-cols-8;
+		@apply col-start-1 lg:col-start-2 col-end-7 lg:col-end-9 xl:pl-0 lg:pl-20 relative mt-20 grid grid-cols-12;
 	}
 
 	.page-template {
-		@apply w-full m-auto mb-3 mt-6 col-start-2 col-end-8;
+		@apply w-full m-auto mb-3 mt-6 col-start-2 col-end-12;
 	}
 
 	.gallerij-content-template {
