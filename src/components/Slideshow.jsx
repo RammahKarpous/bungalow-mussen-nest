@@ -38,7 +38,7 @@ const Slideshow = ({ images }) => {
                 </SwiperSlide>
             ))}
 
-            <div className="absolute flex right-0 bottom-0 z-20">
+            <div className="absolute flex justify-between md:justify-end md:right-0 md:bottom-0 z-20 w-full top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 md:-translate-y-0 md:-translate-x-0">
                 <div 
                     ref={prevRef} 
                     className="cursor-pointer text-white bg-green-100 hover:bg-green-200 w-16 h-16 flex items-center justify-center transition">
