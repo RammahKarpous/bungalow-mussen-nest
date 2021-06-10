@@ -41,14 +41,14 @@ const Slideshow = ({ images }) => {
             <div className="absolute flex right-0 bottom-0 z-20">
                 <div 
                     ref={prevRef} 
-                    className="cursor-pointer text-white bg-green-100 hover:bg-green-200 w-16 h-16 flex items-center justify-center">
+                    className="cursor-pointer text-white bg-green-100 hover:bg-green-200 w-16 h-16 flex items-center justify-center transition">
                     
                     <img src={chevronLeft} alt="Previous slide" />
                 </div>
 
                 <div 
                     ref={nextRef} 
-                    className="cursor-pointer text-white bg-green-100 hover:bg-green-200 w-16 h-16 flex items-center justify-center">
+                    className="cursor-pointer text-white bg-green-100 hover:bg-green-200 w-16 h-16 flex items-center justify-center transition">
                     
                     <img src={chevronRight} alt="Next slide" />
                 </div>
