@@ -46,7 +46,8 @@ module.exports = {
 			sub: '2rem',
 			subSection: '1.5rem',
 			largeBodyText: '1.25rem',
-			base: '1rem'
+			base: '1rem',
+			sm: '0.8rem'
 		}
 	},
 	variants: {

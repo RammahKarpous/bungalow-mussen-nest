@@ -45,7 +45,7 @@
 
 	/* Button styling */
 	.button {
-		@apply flex gap-3 justify-center items-center py-3 px-5 font-body text-base tracking-widest transition;
+		@apply flex flex-col md:flex-row text-center md:text-left gap-3 justify-center items-center py-3 px-5 font-body text-sm md:text-base tracking-widest transition;
 	}
 	.primary {
 		@apply bg-current bg-green-100 hover:bg-green-200 text-beige-300;
