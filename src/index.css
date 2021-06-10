@@ -109,4 +109,9 @@
 	.gallerij-slideshow-template {
 		@apply xl:w-7/12;
 	}
+
+	/* Form elements */
+	.input {
+		@apply border border-brown-400 rounded p-2 transition w-full;
+	}
 }

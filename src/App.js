@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Woonkamer from './pages/gallerij/Woonkamer';
 import IncludeFooter from './components/templates/IncludeFooter';
 import OverDeBungalow from './pages/OverDeBungalow';
+import Contact from './pages/Contact';
 
 function App() {
 	return (
@@ -38,6 +39,7 @@ function App() {
 						/>
 
 						<Route exact path="/over-de-bungalow" component={OverDeBungalow} />
+						<Route exact path="/contact-ons" component={Contact} />
 					</IncludeFooter>
 				</Switch>
 			</div>
