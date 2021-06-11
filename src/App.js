@@ -1,4 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+
 import SideNavigation from './components/SideNavigation';
 import Gallerij from './pages/Gallerij';
 import Tuin from './pages/gallerij/Tuin';
@@ -15,55 +17,56 @@ function App() {
 		<BrowserRouter>
 			<div className="grid grid-cols-6 lg:grid-cols-8 min-h-full h-full">
 				<SideNavigation />
+				<AnimatePresence initial={false} exitBeforeEnter>
+					<Switch>
+						<Route exact path="/" component={Home} />
 
-				<Switch>
-					<Route exact path="/" component={Home} />
+						<IncludeFooter>
+							<Route
+								exact
+								path="/gallerij/tuin"
+								component={() => (
+									<Gallerij active="Tuin">
+										<Tuin />
+									</Gallerij>
+								)}
+							/>
 
-					<IncludeFooter>
-						<Route
-							exact
-							path="/gallerij/tuin"
-							component={() => (
-								<Gallerij active="Tuin">
-									<Tuin />
-								</Gallerij>
-							)}
-						/>
+							<Route
+								exact
+								path="/gallerij/woonkamer"
+								component={() => (
+									<Gallerij active="Woonkamer">
+										<Woonkamer />
+									</Gallerij>
+								)}
+							/>
 
-						<Route
-							exact
-							path="/gallerij/woonkamer"
-							component={() => (
-								<Gallerij active="Woonkamer">
-									<Woonkamer />
-								</Gallerij>
-							)}
-						/>
+							<Route
+								exact
+								path="/gallerij/keuken"
+								component={() => (
+									<Gallerij active="Keuken">
+										<Keuken />
+									</Gallerij>
+								)}
+							/>
 
-						<Route
-							exact
-							path="/gallerij/keuken"
-							component={() => (
-								<Gallerij active="Keuken">
-									<Keuken />
-								</Gallerij>
-							)}
-						/>
+							<Route
+								exact
+								path="/gallerij/slaapkamer"
+								component={() => (
+									<Gallerij active="Slaapkamer">
+										<Slaapkamer />
+									</Gallerij>
+								)}
+							/>
 
-						<Route
-							exact
-							path="/gallerij/slaapkamer"
-							component={() => (
-								<Gallerij active="Slaapkamer">
-									<Slaapkamer />
-								</Gallerij>
-							)}
-						/>
-
-						<Route exact path="/over-de-bungalow" component={OverDeBungalow} />
-						<Route exact path="/contact-ons" component={Contact} />
-					</IncludeFooter>
-				</Switch>
+							<Route exact path="/over-de-bungalow" component={OverDeBungalow} />
+							<Route exact path="/contact-ons" component={Contact} />
+						</IncludeFooter>
+					</Switch>
+				</AnimatePresence>
 			</div>
 		</BrowserRouter>
 	);
