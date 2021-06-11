@@ -1,9 +1,14 @@
 import Slideshow from "../../components/Slideshow"
 
-import terras from '../../assets/images/tuin/terras.jpg'
-import tuin from '../../assets/images/tuin/tuin.jpg'
-import ligbed from '../../assets/images/tuin/ligbed.jpg'
-import terrasEethoek from '../../assets/images/tuin/terras-eethoek.jpg'
+import woonkamer from '../../assets/images/woonkamer/woonkamer.jpg'
+import tv from '../../assets/images/woonkamer/tv-woonkamer.jpg'
+import bank from '../../assets/images/woonkamer/bank-woonkamer.jpg'
+import eethoek from '../../assets/images/woonkamer/eethoek.jpg'
+import eettafel from '../../assets/images/woonkamer/eettafel.jpg'
+import uitzicht1 from '../../assets/images/woonkamer/uitzicht1.jpg'
+import uitzicht2 from '../../assets/images/woonkamer/uitzicht2.jpg'
+import gordijnen from '../../assets/images/woonkamer/gordijnen.jpg'
+import gordijnen2 from '../../assets/images/woonkamer/gordijnen2.jpg'
 
 // Templates
 import MainTemplate from './../../components/templates/Galerij/MainTemplate';
@@ -13,10 +18,15 @@ import SlideshowTemplate from "../../components/templates/Galerij/SlideshowTempl
 const Woonkamer = () => {
 
     const images = [
-        { path: terras, name: 'Terras' },
-        { path: tuin, name: 'Tuin' },
-        { path: ligbed, name: 'Ligbed' },
-        { path: terrasEethoek, name: 'Terras eethoek' },
+        { path: woonkamer, name: 'Woonkamer' },
+        { path: tv, name: 'Tuin' },
+        { path: bank, name: 'Ligbed' },
+        { path: eethoek, name: 'eettafel' },
+        { path: eettafel, name: 'eettafel' },
+        { path: uitzicht1, name: 'Eerste uitzicht' },
+        { path: uitzicht2, name: 'Tweede uitzicht' },
+        { path: gordijnen, name: 'Gordijnen' },
+        { path: gordijnen2, name: 'Gordijnen 2' },
     ]
     
     return (
