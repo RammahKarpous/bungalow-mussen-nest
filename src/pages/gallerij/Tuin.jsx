@@ -16,7 +16,7 @@ const Tuin = () => {
         { path: ligbed, name: 'Ligbed' },
         { path: terrasEethoek, name: 'Terras eethoek' },
     ]
-//  w-10/12 xl:w-full m-auto lg:ml-0 
+ 
     return (
         <MainTemplate>
             <SlideshowTemplate>
