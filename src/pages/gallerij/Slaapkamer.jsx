@@ -30,8 +30,11 @@ const Slaapkamer = () => {
             <ContentTemplate quaterWidth>
             <img src={images[0].path} alt={images[0].name} className="xl:w-9/12 xl:block hidden mb-10" />
 
-                <p>De zonnige tuin op het zuiden geeft u alle privacy. Er staat een eettafel met 2 stoelen.
-                Tevens 2 heerlijke ligbedden met een tafeltje en uiteraard ontbreekt de parasol niet. Dit alles is voorzien van kussens voor een comfortabele zit of lig. Badlakens voor de ligbedden zijn ook aanwezig. Geniet van de rust en fluitende vogels op uw eigen terras. En misschien brengt de eekhoorn u wel een bezoekje!</p>
+                <p>Slaapkamer met aangrenzende badkamer. SwissSense medium boxspring bed van 180 x 210.
+                U heeft 4 hoofdkussens en 2 losse 1-persoonsdekbedden (140x210). Op verzoek is er ook een 2 peroonsdekbed (240x210). De keuze mag u kenbaar maken bij de boeking.
+                Aan beide zijden van het bed een leeslampje en plankje voor persoonlijke spullen. Het beddengoed is fris wit en gemaakt van katoensatijn. Dekbedden en kussen hebben een katoenen tijk.
+                De vulling is anti allergie. De linnenkast met kluisje, completeren de slaapkamer.
+                </p>
             </ContentTemplate>
         </MainTemplate>
     )
