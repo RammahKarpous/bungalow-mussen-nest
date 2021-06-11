@@ -4,6 +4,7 @@ import terras from '../../assets/images/tuin/terras.jpg'
 import tuin from '../../assets/images/tuin/tuin.jpg'
 import ligbed from '../../assets/images/tuin/ligbed.jpg'
 import terrasEethoek from '../../assets/images/tuin/terras-eethoek.jpg'
+
 import MainTemplate from './../../components/templates/Galerij/MainTemplate';
 import SlideshowTemplate from "../../components/templates/Galerij/SlideshowTemplate"
 import ContentTemplate from './../../components/templates/Galerij/ContentTemplate';
