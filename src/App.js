@@ -7,6 +7,7 @@ import Woonkamer from './pages/gallerij/Woonkamer';
 import IncludeFooter from './components/templates/IncludeFooter';
 import OverDeBungalow from './pages/OverDeBungalow';
 import Contact from './pages/Contact';
+import Keuken from './pages/gallerij/Keuken';
 
 function App() {
 	return (
@@ -34,6 +35,16 @@ function App() {
 							component={() => (
 								<Gallerij active="Woonkamer">
 									<Woonkamer />
+								</Gallerij>
+							)}
+						/>
+
+						<Route
+							exact
+							path="/gallerij/keuken"
+							component={() => (
+								<Gallerij active="Keuken">
+									<Keuken />
 								</Gallerij>
 							)}
 						/>
