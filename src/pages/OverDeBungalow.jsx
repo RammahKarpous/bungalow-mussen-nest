@@ -1,12 +1,12 @@
 import plattegrondFoto from '../assets/images/bungalow-plattegrond.png'
 
-import keuken from '../assets/images/Keuken/keuken.jpg'
-import combidicht from '../assets/images/Keuken/combidicht.jpg'
-import combi from '../assets/images/Keuken/combi.jpg'
-import spoelkast from '../assets/images/Keuken/spoelkast.jpg'
-import vaatwasser from '../assets/images/Keuken/vaatwasser.jpg'
-import koelkast from '../assets/images/Keuken/koelkast.jpg'
-import servies from '../assets/images/Keuken/servies.jpg'
+import keuken from '../assets/images/keuken/keuken.jpg'
+import combidicht from '../assets/images/keuken/combidicht.jpg'
+import combi from '../assets/images/keuken/combi.jpg'
+import spoelkast from '../assets/images/keuken/spoelkast.jpg'
+import vaatwasser from '../assets/images/keuken/vaatwasser.jpg'
+import koelkast from '../assets/images/keuken/koelkast.jpg'
+import servies from '../assets/images/keuken/servies.jpg'
 import Slideshow from "../components/Slideshow"
 
 import PageTemplate from "../components/templates/PageTemplate"
