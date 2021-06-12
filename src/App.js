@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import Keuken from './pages/gallerij/Keuken';
 import Slaapkamer from './pages/gallerij/Slaapkamer';
 import Badkamer from './pages/gallerij/Badkamer';
+import Hal from './pages/gallerij/Hal';
 
 function App() {
 	return (
@@ -69,6 +70,16 @@ function App() {
 								component={() => (
 									<Gallerij active="Badkamer">
 										<Badkamer />
+									</Gallerij>
+								)}
+							/>
+
+							<Route
+								exact
+								path="/gallerij/hal"
+								component={() => (
+									<Gallerij active="Hal">
+										<Hal />
 									</Gallerij>
 								)}
 							/>
