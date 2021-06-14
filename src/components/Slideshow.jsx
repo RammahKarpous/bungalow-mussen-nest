@@ -41,16 +41,16 @@ const Slideshow = ({ images }) => {
             <div className="absolute flex justify-between md:justify-end md:right-0 md:bottom-0 z-20 w-full top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 md:-translate-y-0 md:-translate-x-0 md:top-auto md:left-auto">
                 <div 
                     ref={prevRef} 
-                    className="cursor-pointer text-white bg-green-100 hover:bg-green-200 w-16 h-16 flex items-center justify-center transition">
+                    className="cursor-pointer text-white bg-green-100 hover:bg-green-200 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center transition">
                     
-                    <img src={chevronLeft} alt="Previous slide" />
+                    <img src={chevronLeft} alt="Previous slide" className="transform -translate-x-1" />
                 </div>
 
                 <div 
                     ref={nextRef} 
-                    className="cursor-pointer text-white bg-green-100 hover:bg-green-200 w-16 h-16 flex items-center justify-center transition">
+                    className="cursor-pointer text-white bg-green-100 hover:bg-green-200 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center transition">
                     
-                    <img src={chevronRight} alt="Next slide" />
+                    <img src={chevronRight} alt="Next slide" className="transform translate-x-1" />
                 </div>
             </div>
         </Swiper>
