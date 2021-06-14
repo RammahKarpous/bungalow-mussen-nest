@@ -13,6 +13,8 @@ import Keuken from './pages/gallerij/Keuken';
 import Slaapkamer from './pages/gallerij/Slaapkamer';
 import Badkamer from './pages/gallerij/Badkamer';
 import Hal from './pages/gallerij/Hal';
+import Activiteiten from './pages/Activiteiten';
+import Toeristisch from './pages/activiteiten/Toeristisch';
 
 function App() {
 	return (
@@ -85,6 +87,17 @@ function App() {
 							/>
 
 							<Route exact path="/over-de-bungalow" component={OverDeBungalow} />
+
+							<Route
+								exact
+								path="/activiteiten/toeristisch"
+								component={() => (
+									<Activiteiten active="Toeristisch">
+										<Toeristisch />
+									</Activiteiten>
+								)}
+							/>
+
 							<Route exact path="/contact-ons" component={Contact} />
 						</IncludeFooter>
 					</Switch>
