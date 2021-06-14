@@ -48,7 +48,7 @@ const Home = () => {
                     exit={{ opacity: 0 }}
                     transition={transition}
 
-                    className="flex flex-col justify-center items-center gap-2 w-96 absolute left-1/2 bottom-10 md:bottom-32 transform -translate-x-1/2 text-center">
+                    className="flex flex-col justify-center items-center gap-2 w-72 absolute left-1/2 bottom-10 md:bottom-32 transform -translate-x-1/2 text-center">
                     
                     <h1 className="text-white">Welkom</h1>
                     <p className="text-white font-medium text-largeBodyText">Bij de mussen-nest voor de ideale vakantie voor twee</p>
