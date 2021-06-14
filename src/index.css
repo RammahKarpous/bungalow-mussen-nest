@@ -89,6 +89,12 @@
 		background-repeat: no-repeat !important;
 	}
 
+	.bg-cover {
+		background-position: center !important;
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+	}
+
 	/* Template styles */
 	.include-footer {
 		@apply col-start-1 lg:col-start-2 col-end-7 lg:col-end-9 xl:pl-0 lg:pl-20 relative mt-20 grid grid-cols-8;
