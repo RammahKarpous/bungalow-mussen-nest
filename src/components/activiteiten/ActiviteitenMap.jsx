@@ -17,7 +17,7 @@ const ActiviteitenMap = () => {
                     />
 
                     {winkels.map(winkel => (
-                        <Marker position={[winkel.location.lat, winkel.location.lng]}></Marker>
+                        <Marker key={winkel.id} position={[winkel.location.lat, winkel.location.lng]}></Marker>
                     ))}
 
                 </MapContainer>
