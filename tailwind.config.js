@@ -38,6 +38,10 @@ module.exports = {
 				headings: [ "'Source Sans Pro'" ],
 				headlines: [ 'Cinzel' ],
 				body: [ 'Montserrat' ]
+			},
+			height: {
+				'lg-map': '730px',
+				'md-map': '400px'
 			}
 		},
 		fontSize: {
