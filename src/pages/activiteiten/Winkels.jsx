@@ -1,10 +1,11 @@
 import MainTemplate from "../../components/templates/Galerij/MainTemplate"
-import ActiviteitenMap from '../../components/activiteiten/ActiviteitenMap';
+import LocatiesMap from '../../components/activiteiten/LocatiesMap';
+import { winkels } from './../../components/activiteiten/winkels';
 
 const Winkels = () => {
     return (
         <MainTemplate>
-            <ActiviteitenMap />
+            <LocatiesMap gebouwen={winkels} />
         </MainTemplate>
     )
 }
