@@ -121,3 +121,8 @@
 		@apply border border-brown-400 rounded p-2 transition w-full;
 	}
 }
+
+.leaflet-container {
+	width: 100%;
+	height: 100%;
+}

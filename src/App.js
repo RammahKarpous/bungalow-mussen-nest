@@ -15,6 +15,7 @@ import Badkamer from './pages/gallerij/Badkamer';
 import Hal from './pages/gallerij/Hal';
 import Activiteiten from './pages/Activiteiten';
 import Toeristisch from './pages/activiteiten/Toeristisch';
+import Winkels from './pages/activiteiten/Winkels';
 
 function App() {
 	return (
@@ -87,6 +88,16 @@ function App() {
 							/>
 
 							<Route exact path="/over-de-bungalow" component={OverDeBungalow} />
+
+							<Route
+								exact
+								path="/activiteiten/winkels"
+								component={() => (
+									<Activiteiten active="Winkels">
+										<Winkels />
+									</Activiteiten>
+								)}
+							/>
 
 							<Route
 								exact
