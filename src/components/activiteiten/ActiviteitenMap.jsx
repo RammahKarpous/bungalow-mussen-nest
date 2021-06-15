@@ -10,7 +10,7 @@ const ActiviteitenMap = () => {
     return (
         <div className="h-40 md:h-96 w-full grid grid-cols-1 md:grid-cols-4">
             <div className="col-start-1 col-end-4">
-                <MapContainer center={[52.101440, 5.772200]} zoom={13} scrollWheelZoom={false}>
+                <MapContainer center={[52.101440, 5.772200]} zoom={11} scrollWheelZoom={false}>
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
