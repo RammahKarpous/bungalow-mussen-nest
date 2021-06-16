@@ -5,7 +5,7 @@ const FooterNavigation = ({ title, links }) => {
         <div>
             <h3 className="text-beige-300 mb-3">{title}</h3>
             <nav>
-                <ul>
+                <ul className="flex flex-col gap-3">
                     {links.map((link, i) => (
                         <li key={i}><Link className="text-beige-300" to={link.to}>{link.name}</Link></li>
                     ))}

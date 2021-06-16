@@ -12,7 +12,7 @@ const Footer = () => {
                     <p className="text-beige-300">De woonkamer heeft heerlijk uitzicht op de tuin en geeft u volledig privacy. Het interieur is met een warme houten pvc vloer, witte muren en natuurlijk gordijnen een oase van rust.</p>
                 </div>
 
-                <div className="flex flex-wrap flex-col sm:flex-row gap-10 justify-between">
+                <div className="flex flex-wrap flex-col sm:flex-row gap-20 justify-between">
                     <FooterNavigation title="Pagina's" links={links} />
                     <FooterNavigation title="Gallerij" links={gallerijLinks} />
 
