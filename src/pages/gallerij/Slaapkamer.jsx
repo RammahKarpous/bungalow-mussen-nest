@@ -7,9 +7,9 @@ import bed2 from '../../assets/images/slaapkamer/bed2.jpg'
 import slaapkamer3 from '../../assets/images/slaapkamer/slaapkamer3.jpg'
 import slaapkamer4 from '../../assets/images/slaapkamer/slaapkamer4.jpg'
 
-import MainTemplate from '../../components/templates/Galerij/MainTemplate';
-import SlideshowTemplate from "../../components/templates/Galerij/SlideshowTemplate"
-import ContentTemplate from '../../components/templates/Galerij/ContentTemplate';
+import MainTemplate from '../../components/templates/MainTemplate';
+import SlideshowTemplate from "../../components/templates/SlideshowTemplate"
+import ContentTemplate from '../../components/templates/ContentTemplate';
 
 const Slaapkamer = () => {
 

@@ -10,10 +10,10 @@ import servies from '../assets/images/keuken/servies.jpg'
 import Slideshow from "../components/Slideshow"
 
 import PageTemplate from "../components/templates/PageTemplate"
-import SlideshowTemplate from './../components/templates/Galerij/SlideshowTemplate';
-import ContentTemplate from "../components/templates/Galerij/ContentTemplate"
+import SlideshowTemplate from './../components/templates/SlideshowTemplate';
+import ContentTemplate from "../components/templates/ContentTemplate"
 import Button from '../components/Button'
-import MainTemplate from '../components/templates/Galerij/MainTemplate'
+import MainTemplate from '../components/templates/MainTemplate'
 
 import plattegrondPDF from '../assets/downloads/mussen-nest-plattegrond.pdf'
 import liebherrPDF from '../assets/downloads/liebherr-ik1624-21.pdf'

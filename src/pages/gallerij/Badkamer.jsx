@@ -8,9 +8,9 @@ import douchekraan from '../../assets/images/badkamer/douchekraan.jpg'
 import wasbak from '../../assets/images/badkamer/wasbak.jpg'
 import regendouche from '../../assets/images/badkamer/regendouche.jpg'
 
-import MainTemplate from './../../components/templates/Galerij/MainTemplate';
-import SlideshowTemplate from "../../components/templates/Galerij/SlideshowTemplate"
-import ContentTemplate from './../../components/templates/Galerij/ContentTemplate';
+import MainTemplate from './../../components/templates/MainTemplate';
+import SlideshowTemplate from "../../components/templates/SlideshowTemplate"
+import ContentTemplate from './../../components/templates/ContentTemplate';
 
 const Badkamer = () => {
 

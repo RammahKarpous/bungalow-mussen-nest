@@ -11,9 +11,9 @@ import gordijnen from '../../assets/images/woonkamer/gordijnen.jpg'
 import gordijnen2 from '../../assets/images/woonkamer/gordijnen2.jpg'
 
 // Templates
-import MainTemplate from './../../components/templates/Galerij/MainTemplate';
-import ContentTemplate from './../../components/templates/Galerij/ContentTemplate';
-import SlideshowTemplate from "../../components/templates/Galerij/SlideshowTemplate"
+import MainTemplate from './../../components/templates/MainTemplate';
+import ContentTemplate from './../../components/templates/ContentTemplate';
+import SlideshowTemplate from "../../components/templates/SlideshowTemplate"
 
 const Woonkamer = () => {
 

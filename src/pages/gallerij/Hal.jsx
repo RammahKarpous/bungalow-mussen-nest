@@ -4,9 +4,9 @@ import hal from '../../assets/images/hal/hal.jpg'
 import toilet from '../../assets/images/hal/toilet.jpg'
 import gaderobe from '../../assets/images/hal/gaderobe.jpg'
 
-import MainTemplate from './../../components/templates/Galerij/MainTemplate';
-import SlideshowTemplate from "../../components/templates/Galerij/SlideshowTemplate"
-import ContentTemplate from './../../components/templates/Galerij/ContentTemplate';
+import MainTemplate from './../../components/templates/MainTemplate';
+import SlideshowTemplate from "../../components/templates/SlideshowTemplate"
+import ContentTemplate from './../../components/templates/ContentTemplate';
 
 const Hal = () => {
 

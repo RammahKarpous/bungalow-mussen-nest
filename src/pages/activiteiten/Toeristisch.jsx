@@ -1,6 +1,6 @@
 import ToeristenPlaats from "../../components/activiteiten/ToeristenPlaats"
 import { plaatsen } from "../../components/activiteiten/toeristischInfo"
-import MainTemplate from "../../components/templates/Galerij/MainTemplate"
+import MainTemplate from "../../components/templates/MainTemplate"
 
 const Toeristisch = () => {
     return (

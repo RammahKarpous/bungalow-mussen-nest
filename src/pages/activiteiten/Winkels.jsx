@@ -1,4 +1,4 @@
-import MainTemplate from "../../components/templates/Galerij/MainTemplate"
+import MainTemplate from "../../components/templates/MainTemplate"
 import LocatiesMap from '../../components/activiteiten/LocatiesMap';
 import { winkels } from './../../components/activiteiten/winkels';
 

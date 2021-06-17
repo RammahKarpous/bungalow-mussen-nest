@@ -5,9 +5,9 @@ import keukenblok from '../../assets/images/keuken/keukenblok.jpg'
 import keukenhal from '../../assets/images/keuken/keukenhal.jpg'
 import keukeneethoek from '../../assets/images/keuken/keukeneethoek.jpg'
 
-import MainTemplate from './../../components/templates/Galerij/MainTemplate';
-import SlideshowTemplate from "../../components/templates/Galerij/SlideshowTemplate"
-import ContentTemplate from './../../components/templates/Galerij/ContentTemplate';
+import MainTemplate from './../../components/templates/MainTemplate';
+import SlideshowTemplate from "../../components/templates/SlideshowTemplate"
+import ContentTemplate from './../../components/templates/ContentTemplate';
 
 const Keuken = () => {
 
