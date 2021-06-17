@@ -16,6 +16,7 @@ import Hal from './pages/gallerij/Hal';
 import Activiteiten from './pages/Activiteiten';
 import Toeristisch from './pages/activiteiten/Toeristisch';
 import Winkels from './pages/activiteiten/Winkels';
+import Horeca from './pages/activiteiten/Horeca';
 
 function App() {
 	return (
@@ -105,6 +106,16 @@ function App() {
 								component={() => (
 									<Activiteiten active="Toeristisch">
 										<Toeristisch />
+									</Activiteiten>
+								)}
+							/>
+
+							<Route
+								exact
+								path="/activiteiten/horeca"
+								component={() => (
+									<Activiteiten active="Horeca">
+										<Horeca />
 									</Activiteiten>
 								)}
 							/>

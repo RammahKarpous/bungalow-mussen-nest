@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import InfoCard from './InfoCard';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import { Icon } from 'leaflet';
 
 import home from '../../assets/icons/map-home.svg'
@@ -22,8 +22,8 @@ const LocatiesMap = ({ gebouwen }) => {
     })
 
     return (
-        <div className="h-md-map md:h-lg-map w-full grid grid-cols-1 md:grid-cols-4 gap-0 md:gap-6 items-start">
-            <div className="col-start-1 col-end-4 h-full">
+        <div className="w-full grid grid-cols-1 md:grid-cols-5 gap-0 md:gap-6 items-start">
+            <div className="col-start-1 col-end-4 h-md-map md:h-lg-map">
                 <MapContainer center={[52.101440, 5.772200]} zoom={11} scrollWheelZoom={true}>
                     
                     <TileLayer
@@ -37,16 +37,21 @@ const LocatiesMap = ({ gebouwen }) => {
                         <Marker 
                             key={gebouw.id} 
                             position={[gebouw.location.lat, gebouw.location.lng]}
-                            className={activeMarker && 'bg-current text-red-500'}
+                            className={`${activeMarker && 'bg-current text-red-500'} hover:bg-gray-400`}
                             icon={mapMarker}
-                        >
-                            <Popup>
-                                <InfoCard gebouwInfo={gebouw} />
-                            </Popup>
-                        </Marker>
-                    ))}
+                            eventHandlers={{ 
+                                click: () => {
+                                    setGebouw(gebouw);
+                                }
+                            }}
 
+                        />
+                    ))}
                 </MapContainer>
+            </div>
+
+            <div className="col-start-1 md:col-start-4 col-end-6">
+                <InfoCard gebouwInfo={gebouw} />
             </div>
         </div>
     )

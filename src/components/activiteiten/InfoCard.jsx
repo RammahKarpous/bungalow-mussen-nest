@@ -2,7 +2,7 @@ import clock from '../../assets/icons/klok.svg'
 
 const InfoCard = ({ gebouwInfo }) => {
     return (
-        <div className="bg-green-100 p-10 flex flex-col gap-2 w-72">
+        <div className="bg-green-100 p-10 flex flex-col gap-2 w-full md:w-96">
             <h3 className="text-beige-300">{gebouwInfo.name}</h3>
             <p className="text-beige-300 mb-1">{gebouwInfo.address}</p>
 
