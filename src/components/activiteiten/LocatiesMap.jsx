@@ -22,9 +22,9 @@ const LocatiesMap = ({ gebouwen }) => {
     })
 
     return (
-        <div className="w-full grid grid-cols-1 md:grid-cols-5 gap-0 md:gap-6 items-start">
+        <div className="w-full grid grid-cols-1 md:grid-cols-5 gap-0 md:gap-6 items-start relative z-0">
             <div className="col-start-1 col-end-4 h-md-map md:h-lg-map">
-                <MapContainer center={[52.101440, 5.772200]} zoom={11} scrollWheelZoom={true}>
+                <MapContainer center={[52.101440, 5.772200]} zoom={11} scrollWheelZoom={false}>
                     
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
