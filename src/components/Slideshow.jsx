@@ -43,7 +43,7 @@ const Slideshow = ({ images, visibleThumbs }) => {
                     </SwiperSlide>
                 ))}
 
-                <div className="absolute flex justify-between md:justify-end md:right-0 md:bottom-0 z-20 w-full top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 md:-translate-y-0 md:-translate-x-0 md:top-auto md:left-auto">
+                <div className="absolute flex justify-between md:justify-end md:right-0 md:bottom-0 z-20 -translate-y-0 -translate-x-0 bottom-0 right-0">
                     <div 
                         ref={prevRef} 
                         className="cursor-pointer text-white bg-green-100 hover:bg-green-200 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center transition">
@@ -66,11 +66,12 @@ const Slideshow = ({ images, visibleThumbs }) => {
                 watchSlidesProgress
                 slidesPerView={visibleThumbs}
                 spaceBetween={20}
-                className="mt-3">
-                    {/* className={`${isActive ? 'opacity-30' : 'opacity-100'}`} */}
+                className="mt-3"
+                freeMode={true}
+                >
 
                     {images.map((image, i) => (
-                        <SwiperSlide tag="li" key={i} className={`cursor-pointer`}>
+                        <SwiperSlide tag="li" key={i} className={`cursor-pointer opacity-30 mySwiper`}>
                             <img className="w-full" src={image.path} alt={image.name} />
                         </SwiperSlide>
                     ))}

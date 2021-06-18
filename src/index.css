@@ -120,6 +120,11 @@
 	.input {
 		@apply border border-brown-400 rounded p-2 transition w-full;
 	}
+
+	/* Swiper thumbnails */
+	.swiper-slide-thumb-active {
+		@apply opacity-100 transition !important;
+	}
 }
 
 .leaflet-container {
