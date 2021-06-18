@@ -4,7 +4,7 @@ import { horeca } from './../../components/activiteiten/horeca';
 
 const Horeca = () => {
     return (
-        <MainTemplate extraClassNames="w-full">
+        <MainTemplate>
             <LocatiesMap gebouwen={horeca} />
         </MainTemplate>
     )
