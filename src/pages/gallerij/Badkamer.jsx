@@ -30,7 +30,7 @@ const Badkamer = () => {
                 <Slideshow images={images} />
             </SlideshowTemplate>
             <ContentTemplate quaterWidth>
-                <img src={images[0].path} alt={images[0].name} className="xl:w-9/12 xl:block hidden mb-10" />
+                <h3>Badkamer</h3>
 
                 <p>In de badkamer een douche met regenkop, handdouche en thermostaatkraan.
                 Radiator om de handdoeken te verwarmen, een wasbak en opbergruimte.

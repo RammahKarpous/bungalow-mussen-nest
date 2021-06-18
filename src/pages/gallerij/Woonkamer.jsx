@@ -36,7 +36,7 @@ const Woonkamer = () => {
             </SlideshowTemplate>
 
             <ContentTemplate quaterWidth>
-                <img src={images[0].path} alt={images[0].name} className="xl:w-9/12 xl:block hidden mb-10" />
+                <h3>Woonkamer</h3>
 
                 <p>De woonkamer heeft heerlijk uitzicht op de tuin en geeft u volledig privacy. Het interieur is met een warme houten pvc vloer, witte muren en natuurlook gordijnen een oase van rust. Een 2-persoonsbank, hokkers-salontafel, vitrinekast, TV, Blu-Ray speler, ronde eettafel, twee eetstoelen en sfeervolle verlichting maken onze bungalow uw thuis.
                 </p>

@@ -28,7 +28,7 @@ const Slaapkamer = () => {
                 <Slideshow images={images} />
             </SlideshowTemplate>
             <ContentTemplate quaterWidth>
-                <img src={images[0].path} alt={images[0].name} className="xl:w-9/12 xl:block hidden mb-10" />
+                <h3>Slaapkamer</h3>
 
                 <p>Slaapkamer met aangrenzende badkamer. SwissSense medium boxspring bed van 180 x 210.
                 U heeft 4 hoofdkussens en 2 losse 1-persoonsdekbedden (140x210). Op verzoek is er ook een 2 peroonsdekbed (240x210). De keuze mag u kenbaar maken bij de boeking.
