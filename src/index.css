@@ -101,7 +101,7 @@
 	}
 
 	.page-template {
-		@apply w-full m-auto mb-3 mt-6 col-start-2 col-end-8;
+		@apply w-full m-auto mb-32 mt-6 col-start-2 col-end-8;
 	}
 
 	.gallerij-content-template {

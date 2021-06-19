@@ -19,7 +19,7 @@ const Contact = () => {
     }
 
     return (
-        <PageTemplate extraClassNames="max-w-4xl m-auto md:pl-12 mt-12 md:mt-0">
+        <PageTemplate extraClassNames="max-w-4xl m-auto md:pl-12 mt-12 md:mt-0 mb-32">
             
             {flash && (
                 <div className="text-center border-green-100 border-2 p-2 bg-body absolute top-7 left-1/2 transform -translate-x-1/2 w-96 z-20">
