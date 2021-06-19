@@ -37,7 +37,7 @@ export const horeca = [
 			{ day: 'Donderdag', times: '11:00 - 22:00' },
 			{ day: 'Vrijdag', times: '11:00 - 22:00' },
 			{ day: 'Zaterdag', times: '11:00 - 22:00' },
-			{ day: 'Zondag', times: '11:00 21:00' }
+			{ day: 'Zondag', times: '11:00 - 21:00' }
 		]
 	},
 
