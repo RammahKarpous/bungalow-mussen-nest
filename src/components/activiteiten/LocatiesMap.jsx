@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import InfoCard from './InfoCard';
-import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, ZoomControl } from 'react-leaflet';
 import { Icon } from 'leaflet';
 
 import home from '../../assets/icons/map-home.svg'
@@ -22,9 +22,9 @@ const LocatiesMap = ({ gebouwen }) => {
     })
 
     return (
-        <div className="w-full grid grid-cols-1 md:grid-cols-5 gap-0 md:gap-6 items-start relative z-0">
-            <div className="col-start-1 col-end-4 h-md-map md:h-lg-map">
-                <MapContainer center={[52.101440, 5.772200]} zoom={11} scrollWheelZoom={false}>
+        <div className="w-full grid grid-cols-1 xl:grid-cols-5 gap-0 md:gap-6 items-start relative z-0">
+            <div className="col-start-1 xl:col-end-4 h-md-map xl:h-lg-map">
+                <MapContainer center={[52.101440, 5.772200]} zoom={11} scrollWheelZoom={false} zoomControl={false}>
                     
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -44,13 +44,14 @@ const LocatiesMap = ({ gebouwen }) => {
                                     setGebouw(gebouw);
                                 }
                             }}
-
                         />
                     ))}
+
+                    <ZoomControl position="bottomright" />
                 </MapContainer>
             </div>
 
-            <div className="col-start-1 md:col-start-4 col-end-6">
+            <div className="col-start-1 xl:col-start-4 xl:col-end-6">
                 <InfoCard gebouwInfo={gebouw} />
             </div>
         </div>
