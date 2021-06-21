@@ -3,9 +3,7 @@ import { NavLink } from "react-router-dom"
 import { links } from './links'
 
 // Social media icons
-import instagram from '../assets/icons/social-media/instagram.svg'
-import twitter from '../assets/icons/social-media/twitter.svg'
-import facebook from '../assets/icons/social-media/facebook.svg'
+import tripadvisor from '../assets/icons/social-media/tripadvisor.svg'
 import { useState } from "react"
 
 const SideNavigation = ({ openState }) => {
@@ -40,9 +38,7 @@ const SideNavigation = ({ openState }) => {
                 </ul>
 
                 <div className="absolute bottom-10 left-6 flex gap-6">
-                    <img src={twitter} alt="Twitter" />
-                    <img src={facebook} alt="Facebook" />
-                    <img src={instagram} alt="Instagram" />
+                    <a href="https://www.tripadvisor.co.uk/VacationRentalReview-g652238-d16674175-Rustige_Bungalow_Mussen_nest-Otterlo_Ede_Gelderland_Province.html" target="_blank"><img src={tripadvisor} alt="Tripadvisor" /></a>
                 </div>
             </nav>
         </div>
