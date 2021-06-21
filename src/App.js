@@ -17,6 +17,7 @@ import Activiteiten from './pages/Activiteiten';
 import Toeristisch from './pages/activiteiten/Toeristisch';
 import Winkels from './pages/activiteiten/Winkels';
 import Horeca from './pages/activiteiten/Horeca';
+import Reserveren from './pages/Reserveren';
 
 function App() {
 	return (
@@ -89,6 +90,7 @@ function App() {
 							/>
 
 							<Route exact path="/over-de-bungalow" component={OverDeBungalow} />
+							<Route exact path="/reserveren" component={Reserveren} />
 
 							<Route
 								exact
