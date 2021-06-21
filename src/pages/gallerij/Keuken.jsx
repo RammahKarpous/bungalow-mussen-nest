@@ -23,7 +23,7 @@ const Keuken = () => {
             <SlideshowTemplate>
                 <Slideshow images={images} />
             </SlideshowTemplate>
-            <ContentTemplate quaterWidth>
+            <ContentTemplate>
                 <h3>Keuken</h3>
 
                 <p>De zonnige tuin op het zuiden geeft u alle privacy. Er staat een eettafel met 2 stoelen.

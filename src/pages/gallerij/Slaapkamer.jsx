@@ -27,7 +27,7 @@ const Slaapkamer = () => {
             <SlideshowTemplate>
                 <Slideshow images={images} />
             </SlideshowTemplate>
-            <ContentTemplate quaterWidth>
+            <ContentTemplate>
                 <h3>Slaapkamer</h3>
 
                 <p>Slaapkamer met aangrenzende badkamer. SwissSense medium boxspring bed van 180 x 210.

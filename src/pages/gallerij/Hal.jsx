@@ -21,7 +21,7 @@ const Hal = () => {
             <SlideshowTemplate>
                 <Slideshow images={images} visibleThumbs={3} />
             </SlideshowTemplate>
-            <ContentTemplate quaterWidth>
+            <ContentTemplate>
                 <h3>Hal</h3>
 
                 <p>Bij binnenkomst, komt u in een betegelde hal, aan uw linkerzijde het toilet en aan de rechterzijde een garderobe kast, hier vind u voldoende kledinghangers en een paraplu voor het geval u die nodig heeft. Ook de swiffer staat hier en een kleine verbandtrommel. Boven deze kast liggen de handdoeken voor op de buiten bedden.</p>

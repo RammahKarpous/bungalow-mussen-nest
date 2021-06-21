@@ -29,7 +29,7 @@ const Badkamer = () => {
             <SlideshowTemplate>
                 <Slideshow images={images} />
             </SlideshowTemplate>
-            <ContentTemplate quaterWidth>
+            <ContentTemplate>
                 <h3>Badkamer</h3>
 
                 <p>In de badkamer een douche met regenkop, handdouche en thermostaatkraan.
