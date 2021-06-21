@@ -1,5 +1,4 @@
 import PageTemplate from './../components/templates/PageTemplate';
-import Button from './../components/Button';
 
 import {
     RangeDatePicker
@@ -12,11 +11,17 @@ const Reserveren = () => {
             <h1>Reserveren</h1>
 
             <RangeDatePicker
-                startDate={new Date(2020, 0, 15)}
-                endDate={new Date(2020, 1, 1)}
+                startDate={new Date()}
+                endDate={new Date()}
             />
 
-            <Button to="#" text="Reserveer op Tripadvisor" type="primary" />
+            <a 
+                href="https://www.tripadvisor.co.uk/VacationRentalReview-g652238-d16674175-Rustige_Bungalow_Mussen_nest-Otterlo_Ede_Gelderland_Province.html"  
+                target="_blank"
+                rel="noreferrer"
+                className="button primary">
+                    RESERVEER OP TRIPADVISOR
+            </a>
         </PageTemplate>
     )
 }
