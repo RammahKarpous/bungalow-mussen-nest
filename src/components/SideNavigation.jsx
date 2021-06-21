@@ -38,7 +38,13 @@ const SideNavigation = ({ openState }) => {
                 </ul>
 
                 <div className="absolute bottom-10 left-6 flex gap-6">
-                    <a href="https://www.tripadvisor.co.uk/VacationRentalReview-g652238-d16674175-Rustige_Bungalow_Mussen_nest-Otterlo_Ede_Gelderland_Province.html" target="_blank"><img src={tripadvisor} alt="Tripadvisor" /></a>
+                    <a 
+                        href="https://www.tripadvisor.co.uk/VacationRentalReview-g652238-d16674175-Rustige_Bungalow_Mussen_nest-Otterlo_Ede_Gelderland_Province.html" 
+                        target="_blank" 
+                        rel="noreferrer">
+
+                        <img src={tripadvisor} alt="Tripadvisor" />
+                    </a>
                 </div>
             </nav>
         </div>

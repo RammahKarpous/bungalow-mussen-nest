@@ -25,13 +25,27 @@ const Home = () => {
         //eslint-disable-next-line
     }, []);
 
+    const stagger = {
+        animate: {
+            transition: {
+                staggerChildren: .2
+            }
+        }
+    }
+
     return (
         <motion.div
-            exit={{ opacity: 0 }}
-            transition={transition}
-
+            variants={stagger}
             className="col-start-1 lg:col-start-2 col-end-7 lg:col-end-9 relative h-screen">
-            <div className={`
+            
+            <motion.div
+                initial={{ width: '0%' }}
+                animate={{ width: '100%' }}
+                exit={{ width: '0%' }}
+
+                transition={transition}
+
+                className={`
                     absolute top-0 left-0 w-full h-full -z-1
                     ${ width < 640 && 'sm-bg-cover' }
                     ${ width > 640 && 'md-bg-cover' }
@@ -40,21 +54,25 @@ const Home = () => {
                 `}
                 
                 style={{ background: `url(${desktopBgImage})` }}>    
-            </div>
+            </motion.div>
 
-            <div
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                
+                transition={transition}
+
                 className="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-b from-transparent to-black">
-                <motion.div 
-                    exit={{ opacity: 0 }}
-                    transition={transition}
+                <div
 
                     className="flex flex-col justify-center items-center gap-2 w-72 absolute left-1/2 bottom-10 md:bottom-32 transform -translate-x-1/2 text-center">
                     
                     <h1 className="text-white">Welkom</h1>
                     <p className="text-white font-medium text-largeBodyText">Bij de mussen-nest voor de ideale vakantie voor twee</p>
                     <Button to="/gallerij/tuin" type="secondary" text="Bezoek de gallerij" />
-                </motion.div>
-            </div>
+                </div>
+            </motion.div>
         </motion.div>
     )
 }
