@@ -39,11 +39,12 @@ const Home = () => {
             className="col-start-1 lg:col-start-2 col-end-7 lg:col-end-9 relative h-screen">
             
             <motion.div
+
+                transition={transition}
+                
                 initial={{ width: '0%' }}
                 animate={{ width: '100%' }}
                 exit={{ width: '0%' }}
-
-                transition={transition}
 
                 className={`
                     absolute top-0 left-0 w-full h-full -z-1
