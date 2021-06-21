@@ -3,15 +3,27 @@ import SwiperCore, { Navigation, Pagination, Thumbs } from 'swiper'
 
 import 'swiper/swiper-bundle.css'
 import 'swiper/swiper.scss'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import chevronLeft from '../assets/icons/chevron-left.svg'
 import chevronRight from '../assets/icons/chevron-right.svg'
-import { useState } from 'react';
 
 SwiperCore.use([ Navigation, Pagination, Thumbs ])
 
 const Slideshow = ({ images, visibleThumbs }) => {
+
+    const [width, setWidth] = useState(window.innerWidth);
+
+    const updateDimensions = () => {
+        setWidth(window.innerWidth);
+    }
+
+    useEffect(() => {
+        window.addEventListener("resize", updateDimensions);
+        return () => window.removeEventListener("resize", updateDimensions);
+
+        //eslint-disable-next-line
+    }, []);
 
     const prevRef = useRef()
     const nextRef = useRef()
@@ -64,7 +76,7 @@ const Slideshow = ({ images, visibleThumbs }) => {
                 onSwiper={setThumbsSwiper}
                 watchSlidesVisibility
                 watchSlidesProgress
-                slidesPerView={visibleThumbs}
+                slidesPerView={width < 420 ? 2 : width < 640 ? 3 : visibleThumbs}
                 spaceBetween={20}
                 className="mt-3"
                 freeMode={true}
