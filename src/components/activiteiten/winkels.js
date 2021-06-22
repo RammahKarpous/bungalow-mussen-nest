@@ -8,7 +8,7 @@ export const winkels = [
 		name: 'Spar',
 		address: 'Dorpsstraat 4a, 6731 AT Otterlo, +31 (318 591246)',
 		link: 'http://otterlo.spar.nl/',
-		website: 'www.otterlo.spar.nl/',
+		website: 'www.otterlo.spar.nl',
 		openingTimes: [
 			{ day: 'Maandag', times: '08:00 19:00' },
 			{ day: 'Dinsdag', times: '08:00 19:00' },
@@ -71,7 +71,7 @@ export const winkels = [
 		name: 'Supermarkt Albert Heijn',
 		address: 'Parkweide 14, 6718 DJ Ede, +31 (318 610583)',
 		link: 'http://www.plus.nl/',
-		website: 'www.plus.nl/',
+		website: 'www.ah.nl',
 		openingTimes: [
 			{ day: 'Maandag', times: '07:00 22:00' },
 			{ day: 'Dinsdag', times: '07:00 22:00' },
