@@ -17,7 +17,6 @@ import Activiteiten from './pages/Activiteiten';
 import Toeristisch from './pages/activiteiten/Toeristisch';
 import Winkels from './pages/activiteiten/Winkels';
 import Horeca from './pages/activiteiten/Horeca';
-import Reserveren from './pages/Reserveren';
 
 function App() {
 	const location = useLocation();
@@ -25,7 +24,7 @@ function App() {
 	return (
 		<div className="grid grid-cols-6 lg:grid-cols-8 min-h-full h-full">
 			<SideNavigation />
-			<AnimatePresence exitBeforeEnter>
+			<AnimatePresence initial={false} exitBeforeEnter>
 				<Switch location={location} key={location.key}>
 					<Route exact path="/" component={Home} />
 
@@ -91,7 +90,6 @@ function App() {
 						/>
 
 						<Route exact path="/over-de-bungalow" component={OverDeBungalow} />
-						<Route exact path="/reserveren" component={Reserveren} />
 
 						<Route
 							exact
