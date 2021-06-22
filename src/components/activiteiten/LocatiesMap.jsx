@@ -21,10 +21,12 @@ const LocatiesMap = ({ gebouwen }) => {
         iconSize: [19, 30]
     })
 
+    console.log(activeMarker);
+
     return (
         <div className="w-full grid grid-cols-1 xl:grid-cols-5 gap-0 md:gap-6 items-start relative z-0">
             <div className="col-start-1 xl:col-end-4 h-md-map xl:h-lg-map">
-                <MapContainer center={[52.101440, 5.772200]} zoom={11} scrollWheelZoom={false} zoomControl={false}>
+                <MapContainer center={[52.101440, 5.772200]} zoom={12} scrollWheelZoom={false} zoomControl={false}>
                     
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -37,11 +39,11 @@ const LocatiesMap = ({ gebouwen }) => {
                         <Marker 
                             key={gebouw.id} 
                             position={[gebouw.location.lat, gebouw.location.lng]}
-                            className={`${activeMarker && 'bg-current text-red-500'} hover:bg-gray-400`}
                             icon={mapMarker}
                             eventHandlers={{ 
                                 click: () => {
                                     setGebouw(gebouw);
+                                    setActiveMarker(gebouw.id)
                                 }
                             }}
                         />
