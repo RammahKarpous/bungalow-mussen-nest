@@ -9,7 +9,6 @@ export const links = [
 	{ to: '/', name: 'Home', icon: home },
 	{ to: '/gallerij/tuin', name: 'Gallerij', icon: afbeelding },
 	{ to: '/over-de-bungalow', name: 'Over de bungalow', icon: map },
-	{ to: '/reserveren', name: 'Reserveren', icon: kalender },
 	{ to: '/activiteiten/winkels', name: 'Activiteiten', icon: fiets },
 	{ to: '/contact-ons', name: 'Contact ons', icon: envelop }
 ];
