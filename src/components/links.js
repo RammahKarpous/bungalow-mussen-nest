@@ -1,7 +1,6 @@
 import home from '../assets/icons/home.svg';
 import afbeelding from '../assets/icons/afbeelding.svg';
 import map from '../assets/icons/map.svg';
-import kalender from '../assets/icons/kalender.svg';
 import fiets from '../assets/icons/fiets.svg';
 import envelop from '../assets/icons/envelop.svg';
 
