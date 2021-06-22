@@ -1,19 +1,17 @@
 import { motion } from 'framer-motion'
+import { defaultTransition } from '../animations/transitions'
+import { fade } from '../animations/variants'
 
 const PageTemplate = ({children, extraClassNames}) => {
 
-    const transition = {
-        duration: .5, 
-        sease: [0.6, .01, -0.05, 0.9 ]
-    }
-
     return (
         <motion.div 
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            variants={fade}
             
-            transition={transition}
+            transition={defaultTransition}
             
             className={`page-template ${extraClassNames}`}>
             {children}

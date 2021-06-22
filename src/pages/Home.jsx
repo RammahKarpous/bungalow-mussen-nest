@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import desktopBgImage from '../assets/images/home/home-bg-image.png'
 
 import Button from "../components/Button"
+import { fade } from '../components/animations/variants'
 
 const transition = {
     duration: 1, 
@@ -58,11 +59,12 @@ const Home = () => {
             </motion.div>
 
             <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+                initial="initial"
+                animate="animate"
+                exit="exit"
                 
                 transition={transition}
+                variants={fade}
 
                 className="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-b from-transparent to-black">
                 <div
