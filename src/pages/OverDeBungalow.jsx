@@ -20,6 +20,10 @@ import liebherrPDF from '../assets/downloads/liebherr-ik1624-21.pdf'
 import vaatwasserPDF from '../assets/downloads/vaatwasser.pdf'
 import combiPDF from '../assets/downloads/combi.pdf'
 
+import { defaultTransition } from '../components/animations/transitions'
+import { fade } from './../components/animations/variants';
+import { motion } from 'framer-motion';
+
 const OverDeBungalow = () => {
 
     const images = [
@@ -34,28 +38,37 @@ const OverDeBungalow = () => {
 
     return (
         <PageTemplate>
-            <h1>Over De Bungalow</h1>
+            <motion.div
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                variants={fade}
 
-            <h3 className="mt-10 mb-4">Plattegrond van de bungalow</h3>
-            <img src={plattegrondFoto} alt="Plattegrond van de bungalow" />
-            <Button to={plattegrondPDF} download text="Plattegrond met afmetingen" type="primary" />
+                transition={defaultTransition}>
 
-            <h3 className="mt-10 mb-4">Wat is er in onze bungalow aanwezig?</h3>
-            <MainTemplate>
-                <SlideshowTemplate>
-                    <Slideshow images={images} />
-                </SlideshowTemplate>
+                <h1>Over De Bungalow</h1>
 
-                <ContentTemplate extraClassNames="xl:mt-28">
-                    <h4 className="mt-10 mb-4">Gebruiksaanwijzingen</h4>
+                <h3 className="mt-10 mb-4">Plattegrond van de bungalow</h3>
+                <img src={plattegrondFoto} alt="Plattegrond van de bungalow" />
+                <Button to={plattegrondPDF} download text="Plattegrond met afmetingen" type="primary" />
 
-                    <div className="flex gap-3 flex-col items-start">
-                        <Button to={vaatwasserPDF} download text="Inventum Vaatwasser" type="primary" />
-                        <Button to={combiPDF} download text="Inventum Combi magnetron" type="primary" />
-                        <Button to={liebherrPDF} download text="Liebherr ik1624-21 koelkast" type="primary" />
-                    </div>
-                </ContentTemplate>
-            </MainTemplate>
+                <h3 className="mt-10 mb-4">Wat is er in onze bungalow aanwezig?</h3>
+                <MainTemplate>
+                    <SlideshowTemplate>
+                        <Slideshow images={images} />
+                    </SlideshowTemplate>
+
+                    <ContentTemplate extraClassNames="xl:mt-28">
+                        <h4 className="mt-10 mb-4">Gebruiksaanwijzingen</h4>
+
+                        <div className="flex gap-3 flex-col items-start">
+                            <Button to={vaatwasserPDF} download text="Inventum Vaatwasser" type="primary" />
+                            <Button to={combiPDF} download text="Inventum Combi magnetron" type="primary" />
+                            <Button to={liebherrPDF} download text="Liebherr ik1624-21 koelkast" type="primary" />
+                        </div>
+                    </ContentTemplate>
+                </MainTemplate>
+            </motion.div>
         </PageTemplate>
     )
 }
