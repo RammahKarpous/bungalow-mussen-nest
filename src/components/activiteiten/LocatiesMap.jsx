@@ -9,7 +9,6 @@ import mapMark from '../../assets/icons/map-marker.svg'
 const LocatiesMap = ({ gebouwen, zoom, center }) => {
 
     const [gebouw, setGebouw] = useState(gebouwen[0])
-    const [activeMarker, setActiveMarker] = useState(null)
 
     const house = new Icon({
         iconUrl: home,
@@ -20,8 +19,6 @@ const LocatiesMap = ({ gebouwen, zoom, center }) => {
         iconUrl: mapMark,
         iconSize: [19, 30]
     })
-
-    console.log(activeMarker);
 
     return (
         <div className="w-full grid grid-cols-1 xl:grid-cols-5 gap-0 md:gap-6 items-start relative z-0">
@@ -43,7 +40,6 @@ const LocatiesMap = ({ gebouwen, zoom, center }) => {
                             eventHandlers={{ 
                                 click: () => {
                                     setGebouw(gebouw);
-                                    setActiveMarker(gebouw.id)
                                 }
                             }}
                         />
