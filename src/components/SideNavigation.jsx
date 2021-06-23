@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import { links } from './links'
 import { useEffect, useRef, useState } from "react"
 import { gsap } from 'gsap'
@@ -46,7 +46,7 @@ const SideNavigation = () => {
                     <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-white w-1 h-9"></div>
                 </div>
 
-                <img src={logo} alt="Mussen Nest logo" className="pt-20 pb-5 pl-6" />
+                <Link to='/' onClick={() => width < 1024 && hide()}><img src={logo} alt="Mussen Nest logo" className="pt-20 pb-5 pl-6" /></Link>
 
                 <ul>
                     {links.map((link, i) => (
