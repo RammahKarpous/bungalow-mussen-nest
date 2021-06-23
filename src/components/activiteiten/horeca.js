@@ -2,8 +2,8 @@ export const horeca = [
 	{
 		id: 1,
 		location: {
-			lat: '52.098832',
-			lng: '5.778795'
+			lat: '52.102338',
+			lng: '5.778380'
 		},
 		name: 'Restaurant Cèpes',
 		address: 'Houtkampweg 1, 6731 AV Otterlo, +31 (318 591228)',
@@ -23,8 +23,8 @@ export const horeca = [
 	{
 		id: 2,
 		location: {
-			lat: '52.103158',
-			lng: '5.772513'
+			lat: '52.102256',
+			lng: '5.772220'
 		},
 		name: "'t Smulhuis in Otterlo",
 		address: 'Harskamperweg 6,  6731 AB Otterlo, +31 (318 591663)',

@@ -6,7 +6,7 @@ import { Icon } from 'leaflet';
 import home from '../../assets/icons/map-home.svg'
 import mapMark from '../../assets/icons/map-marker.svg'
 
-const LocatiesMap = ({ gebouwen }) => {
+const LocatiesMap = ({ gebouwen, zoom, center }) => {
 
     const [gebouw, setGebouw] = useState(gebouwen[0])
     const [activeMarker, setActiveMarker] = useState(null)
@@ -26,7 +26,7 @@ const LocatiesMap = ({ gebouwen }) => {
     return (
         <div className="w-full grid grid-cols-1 xl:grid-cols-5 gap-0 md:gap-6 items-start relative z-0">
             <div className="col-start-1 xl:col-end-4 h-md-map xl:h-lg-map">
-                <MapContainer center={[52.101440, 5.772200]} zoom={12} scrollWheelZoom={false} zoomControl={false}>
+                <MapContainer center={center} zoom={zoom} scrollWheelZoom={false} zoomControl={false}>
                     
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
