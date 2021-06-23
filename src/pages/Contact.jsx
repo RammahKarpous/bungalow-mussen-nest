@@ -31,6 +31,8 @@ const Contact = () => {
 
             <h1>Contact ons</h1>
 
+            <p className="mb-5 mt-5">Voor beschikbaarheid, prijsopgave en reservering, maak a.u.b. gebruik van de contact formulier hieronder of een e-mail, u krijgt direct antwoord.</p>
+
             <form onSubmit={sendEmail}>
 
                 <Input name="name" labelText="Voor -en achternaam" />
