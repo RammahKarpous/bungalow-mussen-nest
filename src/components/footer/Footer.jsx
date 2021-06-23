@@ -22,9 +22,10 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            
             <p className="sm:text-center text-beige-300 p-3 px-8 bg-brown-50 mb-0">
                 Gemaakt door <a href="https://viographs.com/nl" target="_blank" rel="noreferrer">
-                    VioGraphs Media
+                    VioGraphs Media.
                 </a>
             </p>
         </footer>
