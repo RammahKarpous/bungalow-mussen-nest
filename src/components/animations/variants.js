@@ -6,10 +6,7 @@ export const fade = {
 		opacity: 1
 	},
 	exit: {
-		opacity: 0,
-		transition: {
-			when: 'afterChildren'
-		}
+		opacity: 0
 	}
 };
 export const fadeAndSlide = {};

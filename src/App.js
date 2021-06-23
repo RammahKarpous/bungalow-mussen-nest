@@ -6,7 +6,6 @@ import Gallerij from './pages/Gallerij';
 import Tuin from './pages/gallerij/Tuin';
 import Home from './pages/Home';
 import Woonkamer from './pages/gallerij/Woonkamer';
-import IncludeFooter from './components/templates/IncludeFooter';
 import OverDeBungalow from './pages/OverDeBungalow';
 import Contact from './pages/Contact';
 import Keuken from './pages/gallerij/Keuken';
@@ -17,6 +16,7 @@ import Activiteiten from './pages/Activiteiten';
 import Toeristisch from './pages/activiteiten/Toeristisch';
 import Winkels from './pages/activiteiten/Winkels';
 import Horeca from './pages/activiteiten/Horeca';
+import Footer from './components/footer/Footer';
 
 function App() {
 	const location = useLocation();
@@ -24,11 +24,12 @@ function App() {
 	return (
 		<div className="grid grid-cols-6 lg:grid-cols-8 min-h-full h-full">
 			<SideNavigation />
-			<AnimatePresence initial={false} exitBeforeEnter>
-				<Switch location={location} key={location.key}>
-					<Route exact path="/" component={Home} />
 
-					<IncludeFooter>
+			<div className="include-footer">
+				<AnimatePresence exitBeforeEnter initial={false}>
+					<Switch location={location} key={location.pathname}>
+						<Route exact path="/" component={Home} />
+
 						<Route
 							exact
 							path="/gallerij/tuin"
@@ -122,9 +123,11 @@ function App() {
 						/>
 
 						<Route exact path="/contact-ons" component={Contact} />
-					</IncludeFooter>
-				</Switch>
-			</AnimatePresence>
+					</Switch>
+				</AnimatePresence>
+
+				{location.pathname !== '/' && <Footer />}
+			</div>
 		</div>
 	);
 }

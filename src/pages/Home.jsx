@@ -35,9 +35,9 @@ const Home = () => {
     }
 
     return (
-        <motion.div
-            variants={stagger}
-            className="col-start-1 lg:col-start-2 col-end-7 lg:col-end-9 relative h-screen">
+        <motion.div 
+            transition={stagger}
+            className="col-start-1 -mt-20 col-end-7 lg:col-end-9 relative h-screen">
             
             <motion.div
 
