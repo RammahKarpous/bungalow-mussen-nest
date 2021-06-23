@@ -7,8 +7,8 @@ import Button from "../components/Button"
 import { fade } from '../components/animations/variants'
 
 const transition = {
-    duration: 1, 
-    sease: [0.6, .01, -0.05, 0.9 ]
+    duration: .8, 
+    sease: [.75, 0, .25, 1 ]
 }
 
 const Home = () => {
