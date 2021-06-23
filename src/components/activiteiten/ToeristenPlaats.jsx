@@ -1,7 +1,7 @@
 const ToeristenPlaats = ({ image, title, excerpt, link }) => {
     return (
         <div 
-            className="flex flex-col justify-start items-start">
+            className="flex flex-col justify-start items-start px-9 md:px-0">
 
             <div 
                 className="h-32 sm:h-72 md:h-32 lg:h-44 xl:h-64 w-full bg-cover"
