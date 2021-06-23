@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 import { links } from './links'
 
 // Social media icons
-import tripadvisor from '../assets/icons/social-media/tripadvisor.svg'
+import tripadvisor from '../assets/icons/social-media/tripadvisor-label.svg'
 import { useState } from "react"
 
 const SideNavigation = ({ openState }) => {
