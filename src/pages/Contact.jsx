@@ -42,7 +42,7 @@ const Contact = () => {
 
                 <h1>Contact ons</h1>
 
-                <p className="mb-5 mt-5">Voor beschikbaarheid, prijsopgave en reservering, maak a.u.b. gebruik van de contact formulier hieronder of een e-mail, u krijgt direct antwoord.</p>
+                <p className="mb-5 mt-5">Voor beschikbaarheid, prijsopgave en reservering, maak a.u.b. gebruik van de contact formulier hieronder of stuur ons een e-mail: <a href="mailto:info@mussen-nest.nl">info@mussen-nest.nl</a>, u krijgt direct antwoord.</p>
 
                 <form onSubmit={sendEmail}>
 
@@ -57,11 +57,6 @@ const Contact = () => {
 
                     <input type="submit" value="Verzend" className="button primary mt-3" />
                 </form>
-
-                <div className="mt-16">
-                    <p className="text-largeBodyText font-bold">E-mail adres</p>
-                    <a className="mt-2 block" href="mailto:info@mussen-nest.nl">info@mussen-nest.nl</a>
-                </div>
             </motion.div>
         </PageTemplate>
     )
