@@ -16,6 +16,8 @@ const SideNavigation = () => {
     }
 
     useEffect(() => {
+        width < 1024 && hide()
+
         window.addEventListener("resize", updateDimensions);
         return () => window.removeEventListener("resize", updateDimensions);
 
@@ -40,7 +42,7 @@ const SideNavigation = () => {
 
             <nav 
                 ref={el => navigation = el}
-                className={`fixed w-72 h-full transition duration-1000 top-0 bg-green-100 z-20`}>
+                className={`fixed w-72 -left-72 md:left-0 h-full transition duration-1000 top-0 bg-green-100 z-20`}>
                 <div className="absolute top-4 left-6 h-10 w-10 lg:invisible cursor-pointer" onClick={() => hide()}>
                     <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white w-1 h-9"></div>
                     <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-white w-1 h-9"></div>
