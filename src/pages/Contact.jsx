@@ -16,6 +16,7 @@ const Contact = () => {
 
         emailjs.sendForm('service_egiqtub', 'template_4zipcfj', e.target, 'user_PakD96NOcOa7nvPQZG9nD')
             .then(() => {
+                e.target.reset()
                 setFlash(true)
             }, (error) => {
                 console.log(error.text)
@@ -36,7 +37,7 @@ const Contact = () => {
                     <div className="text-center border-green-100 border-2 p-2 bg-body absolute top-7 left-1/2 transform -translate-x-1/2 w-96 z-20">
                         <p className="font-bold text-brown-50 mt-2">Uw bericht is verstuurd</p>
         
-                        <p className="button primary w-32 m-auto mt-1 mb-4" onClick={() => setFlash(null)}>Sluit</p>
+                        <p className="button primary w-32 m-auto mt-1 mb-4 cursor-pointer" onClick={() => setFlash(null)}>Sluit</p>
                     </div>
                 )}
 
@@ -55,7 +56,7 @@ const Contact = () => {
 
                     <Input type="textarea" name="comment" labelText="Uw bericht" />
 
-                    <input type="submit" value="Verzend" className="button primary mt-3" />
+                    <input type="submit" value="Verzend" className="button primary mt-3 cursor-pointer" />
                 </form>
             </motion.div>
         </PageTemplate>
