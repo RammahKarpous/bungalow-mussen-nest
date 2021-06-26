@@ -16,9 +16,6 @@ import Button from '../components/Button'
 import MainTemplate from '../components/templates/MainTemplate'
 
 import plattegrondPDF from '../assets/downloads/mussen-nest-plattegrond.pdf'
-import liebherrPDF from '../assets/downloads/liebherr-ik1624-21.pdf'
-import vaatwasserPDF from '../assets/downloads/vaatwasser.pdf'
-import combiPDF from '../assets/downloads/combi.pdf'
 
 import { defaultTransition } from '../components/animations/transitions'
 import { fade } from './../components/animations/variants';
@@ -47,8 +44,33 @@ const OverDeBungalow = () => {
                 transition={defaultTransition}>
 
                 <h1>Over De Bungalow</h1>
+                
+                <p className="mt-4">In het mooie Natuurpark Hoefbos te Otterlo verhuren wij onze volledig gerenoveerde Bungalow mussen-nest. Zelf huren wij al jaren vakantiehuisjes als we er even tussenuit willen. Wij zijn altijd verbaasd hoeveel tijd het kost om alle informatie te vinden over het huisje.Wij verhuren ons huisje voor minimaal 3 nachten, voor €87,50 per nacht en €47,00 voor eindschoonmaak, handdoeken, bedlinnen, etc, is hier bij in begrepen.</p>
+                
+                <small>(Toeristen belasting gemeente Ede, €1,15 pppn komt hier nog bij.)</small>
+
+                <p><strong>Voor beschikbaarheid en prijsopgave, stuur ons a.u.b. een e-mail, u krijgt direct antwoord.</strong></p>
+
+                <p>Wij proberen op onze site alles te noemen zoals het is, geen verrassingen.</p>
+
+                <ul className="list-disc ml-9">
+                    <li>fijne, compleet gerenoveerde bungalow midden in het bos</li>
+                    <li>privé parkeerplaats voor de deur</li>
+                    <li>volledig voorzien van vloerverwarming</li>
+                    <li>woonkamer met uitzicht op de tuin en het bos</li>
+                    <li>zonnige tuin met tafels, stoelen, ligbedden en parasol</li>
+                    <li>geschikt voor 2 personen</li>
+                    <li>op het park zijn geen faciliteiten, dus, rust</li>
+                    <li>onze bungalow ligt in het rustigste deel van het bos</li>
+                    <li>slaapkamer met badkamer</li>
+                    <li>apart toilet</li>
+                    <li>moderne keuken met combi-magnetron en afwasmachine</li>
+                    <li>rookvrij en huisdieren zijn niet welkom</li>
+                    <li>linnengoed en WIFI zijn uiteraard inbegrepen</li>
+                </ul>
 
                 <h3 className="mt-10 mb-4">Plattegrond van de bungalow</h3>
+
                 <img src={plattegrondFoto} alt="Plattegrond van de bungalow" />
                 <Button to={plattegrondPDF} download text="Plattegrond met afmetingen" type="primary" />
 
@@ -59,13 +81,7 @@ const OverDeBungalow = () => {
                     </SlideshowTemplate>
 
                     <ContentTemplate extraClassNames="xl:mt-28">
-                        <h4 className="mt-10 mb-4">Gebruiksaanwijzingen</h4>
-
-                        <div className="flex gap-3 flex-col items-start">
-                            <Button to={vaatwasserPDF} download text="Inventum Vaatwasser" type="primary" />
-                            <Button to={combiPDF} download text="Inventum Combi magnetron" type="primary" />
-                            <Button to={liebherrPDF} download text="Liebherr ik1624-21 koelkast" type="primary" />
-                        </div>
+                    
                     </ContentTemplate>
                 </MainTemplate>
             </motion.div>

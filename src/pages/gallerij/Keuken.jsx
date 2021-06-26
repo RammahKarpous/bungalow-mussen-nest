@@ -9,6 +9,11 @@ import MainTemplate from './../../components/templates/MainTemplate';
 import SlideshowTemplate from "../../components/templates/SlideshowTemplate"
 import ContentTemplate from './../../components/templates/ContentTemplate';
 
+import liebherrPDF from '../../assets/downloads/liebherr-ik1624-21.pdf'
+import vaatwasserPDF from '../../assets/downloads/vaatwasser.pdf'
+import combiPDF from '../../assets/downloads/combi.pdf'
+import Button from './../../components/Button';
+
 const Keuken = () => {
 
     const images = [
@@ -26,8 +31,16 @@ const Keuken = () => {
             <ContentTemplate>
                 <h3>Keuken</h3>
 
-                <p>De zonnige tuin op het zuiden geeft u alle privacy. Er staat een eettafel met 2 stoelen.
-                Tevens 2 heerlijke ligbedden met een tafeltje en uiteraard ontbreekt de parasol niet. Dit alles is voorzien van kussens voor een comfortabele zit of lig. Badlakens voor de ligbedden zijn ook aanwezig. Geniet van de rust en fluitende vogels op uw eigen terras. En misschien brengt de eekhoorn u wel een bezoekje!</p>
+                <p>De keuken is modern en voorzien van een 4-pits gasstel, koelkast (met vriesvak), combimagnetron,afwasmachine, Nespresso koffiemachine, waterkoker, theepot, elektrische citruspers en mixer. Verschillende soorten kook-en braadpannen staan tot uw beschikking. Er is ruim voldoende serviesgoed, glaswerk en bestek aanwezig. Er is een swiffer en een kruimeldief. Klein strijkplankje en strijkbout aanwezig.</p>
+                    
+                <h4 className="mt-10">Gebruiksaanwijzingen</h4>
+                <p className="mb-4">Hieronder vind u een aantal downloadbare gebruiksaanwijzingen</p>
+
+                <div className="flex gap-3 flex-col items-start">
+                    <Button to={vaatwasserPDF} download text="Inventum Vaatwasser" type="primary" />
+                    <Button to={combiPDF} download text="Inventum Combi magnetron" type="primary" />
+                    <Button to={liebherrPDF} download text="Liebherr ik1624-21 koelkast" type="primary" />
+                </div>
             </ContentTemplate>
         </MainTemplate>
     )
