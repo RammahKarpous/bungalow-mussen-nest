@@ -14,7 +14,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_egiqtub', 'template_4zipcfj', e.target, 'user_PakD96NOcOa7nvPQZG9nD')
+        emailjs.sendForm('service_4d2ek4b', 'template_4zipcfj', e.target, 'user_PakD96NOcOa7nvPQZG9nD')
             .then(() => {
                 e.target.reset()
                 setFlash(true)
@@ -35,7 +35,8 @@ const Contact = () => {
                     
                 {flash && (
                     <div className="text-center border-green-100 border-2 p-2 bg-body absolute top-7 left-1/2 transform -translate-x-1/2 w-96 z-20">
-                        <p className="font-bold text-brown-50 mt-2">Uw bericht is verstuurd</p>
+                        <h4 className="font-bold text-brown-50 mt-2 mb-1">Uw bericht is verstuurd</h4>
+                        <p className="font-bold text-brown-50 mt-0">U zult zo snel mogelijk een bericht ontvangen.</p>
         
                         <p className="button primary w-32 m-auto mt-1 mb-4 cursor-pointer" onClick={() => setFlash(null)}>Sluit</p>
                     </div>
