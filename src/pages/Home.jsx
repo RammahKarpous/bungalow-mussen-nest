@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
-import desktopBgImage from '../assets/images/home/home-bg-image.png'
+import bgImage from '../assets/images/home/home-bg-image.jpg'
 
 import Button from "../components/Button"
 import { fade } from '../components/animations/variants'
@@ -55,7 +55,7 @@ const Home = () => {
                     ${ width > 1280 && 'xl-bg-cover' }
                 `}
                 
-                style={{ background: `url(${desktopBgImage})` }}>    
+                style={{ background: `url(${bgImage})` }}>    
             </motion.div>
 
             <motion.div
